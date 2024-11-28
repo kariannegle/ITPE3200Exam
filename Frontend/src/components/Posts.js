@@ -36,9 +36,19 @@ const Posts = () => {
         {posts.map((post) => (
           <div className="post" key={post.id}>
             <div className="left-content">
-              <div className="notecontentwithoutimage">
-                <p aria-label="Post content"> {post.content}</p>
-              </div>
+              {post.imageData ? (
+                <div className="imagecontent">
+                  <img
+                    src={`data:image/jpeg;base64,${post.imageData}`}
+                    alt="Post"
+                    aria-label="Post image"
+                  />
+                </div>
+              ) : (
+                <div className="notecontentwithoutimage">
+                  <p aria-label="Post content">{post.content}</p>
+                </div>
+              )}
             </div>
             <div className="right-content">
               <div
@@ -58,12 +68,19 @@ const Posts = () => {
                       {post.username}
                     </span>
                   </a>
-                  <div class="post-date" aria-label="Post date">
+                  <div className="post-date" aria-label="Post date">
                     {new Date(post.createdAt).toLocaleDateString()}
                   </div>
                 </div>
+                {post.imageData ? (
+                  <div className="noteContentWithImage">
+                    <p>{post.content}</p>
+                  </div>
+                ) : (
+                  <div className=""></div>
+                )}
               </div>
-              {/* //Comments section */}
+              {/* Comments section */}
               <h5
                 className="comments-header"
                 aria-label="Comments section header"
@@ -78,27 +95,29 @@ const Posts = () => {
                   {post.comments.map((comment) => (
                     <div key={comment.id}>
                       <div className="discussion mb-3"> </div>
-                      <div class="d-flex justify-content-between align-items-center">
+                      <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex align-items-center">
                           {/* User Info */}
                           <div className="userImg d-flex align-items-center">
-                            <a href="/" class="nav-link text-black">
+                            <a href="/" className="nav-link text-black">
                               <img
                                 src={userImg}
                                 alt="Avatar"
                                 style={{ width: "25px", height: "25px" }}
                               />
-                              <span class="username">{comment.username}</span>
+                              <span className="username">
+                                {comment.username}
+                              </span>
                             </a>
                           </div>
-                          <div class="comment-date">
+                          <div className="comment-date">
                             <small>
                               {new Date(comment.createdAt).toLocaleDateString()}
                             </small>
                           </div>
                         </div>
                       </div>
-                      <div class="comment">
+                      <div className="comment">
                         <p>{comment.content}</p>
                       </div>
                     </div>

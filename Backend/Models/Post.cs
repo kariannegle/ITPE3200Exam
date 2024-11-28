@@ -23,5 +23,8 @@ namespace NoteApp.Models
         public string Username { get; set; } = string.Empty;
 
         public List<Comment> Comments { get; set; } = new();
+
+
+        public byte[]? ImageData { get; set; } // Image stored as byte array
     }
 }

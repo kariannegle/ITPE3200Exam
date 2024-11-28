@@ -133,7 +133,9 @@ namespace NoteApp.Repositories
 
         public async Task<IEnumerable<Post>> GetPostsAsync()
         {
-            return await _context.Posts.Include(p => p.Comments).ToListAsync();
+            return await _context.Posts
+                .Include(p => p.Comments)
+                .ToListAsync();
         }
 
         public async Task CreatePostAsync(Post post)
