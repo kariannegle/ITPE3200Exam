@@ -5470,3 +5470,61 @@ SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", 
 2024-11-28 22:52:01.267 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 6.3408ms
 er.GetPosts (NoteApp)'
 2024-11-28 22:52:01.267 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 6.3408ms
+2024-11-28 23:42:27.323 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-28 23:42:27.400 +01:00 [INF] Now listening on: http://localhost:5264
+2024-11-28 23:42:27.411 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-28 23:42:27.422 +01:00 [INF] Hosting environment: Development
+2024-11-28 23:42:27.433 +01:00 [INF] Content root path: C:\Users\karia\ITPE3200-WebApp-Exam2\ITPE3200ExamSub2\Backend
+2024-11-28 23:42:41.827 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-11-28 23:42:41.842 +01:00 [INF] CORS policy execution successful.
+2024-11-28 23:42:41.848 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-28 23:42:41.861 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-28 23:42:41.879 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPosts() on controller NoteApp.Controllers.PostController (NoteApp).
+2024-11-28 23:42:42.802 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Posts" AS "p"
+LEFT JOIN "Comments" AS "c" ON "p"."Id" = "c"."PostId"
+ORDER BY "p"."Id"
+2024-11-28 23:42:42.862 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-28 23:42:42.889 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-11-28 23:42:42.892 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 1007.4125ms
+2024-11-28 23:42:42.905 +01:00 [INF] CORS policy execution successful.
+2024-11-28 23:42:42.906 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-28 23:42:42.909 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-28 23:42:42.914 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 1087.1368ms
+2024-11-28 23:42:42.915 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPosts() on controller NoteApp.Controllers.PostController (NoteApp).
+2024-11-28 23:42:42.939 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Posts" AS "p"
+LEFT JOIN "Comments" AS "c" ON "p"."Id" = "c"."PostId"
+ORDER BY "p"."Id"
+2024-11-28 23:42:42.947 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-28 23:42:42.954 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 28.817ms
+2024-11-28 23:42:42.956 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-28 23:42:42.959 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 70.0392ms
+2024-11-28 23:42:50.251 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-11-28 23:42:50.288 +01:00 [INF] CORS policy execution successful.
+2024-11-28 23:42:50.298 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-28 23:42:50.303 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPosts() on controller NoteApp.Controllers.PostController (NoteApp).
+2024-11-28 23:42:50.394 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Posts" AS "p"
+LEFT JOIN "Comments" AS "c" ON "p"."Id" = "c"."PostId"
+ORDER BY "p"."Id"
+2024-11-28 23:42:50.420 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-28 23:42:50.429 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 109.8663ms
+2024-11-28 23:42:50.431 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-11-28 23:42:50.450 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-28 23:42:50.460 +01:00 [INF] CORS policy execution successful.
+2024-11-28 23:42:50.465 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 213.5612ms
+2024-11-28 23:42:50.466 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-28 23:42:50.501 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPosts() on controller NoteApp.Controllers.PostController (NoteApp).
+2024-11-28 23:42:50.516 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Posts" AS "p"
+LEFT JOIN "Comments" AS "c" ON "p"."Id" = "c"."PostId"
+ORDER BY "p"."Id"
+2024-11-28 23:42:50.539 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-28 23:42:50.558 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 43.4729ms
+2024-11-28 23:42:50.576 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-28 23:42:50.589 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 158.0766ms

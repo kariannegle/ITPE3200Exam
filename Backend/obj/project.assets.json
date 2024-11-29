@@ -7039,19 +7039,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/amiinahmed/.nuget/packages/": {}
+    "C:\\Users\\karia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/amiinahmed/Desktop/Github/ITPE3200ExamSub2/Backend/NoteApp.csproj",
+      "projectUniqueName": "C:\\Users\\karia\\ITPE3200-WebApp-Exam2\\ITPE3200ExamSub2\\Backend\\NoteApp.csproj",
       "projectName": "NoteApp",
-      "projectPath": "/Users/amiinahmed/Desktop/Github/ITPE3200ExamSub2/Backend/NoteApp.csproj",
-      "packagesPath": "/Users/amiinahmed/.nuget/packages/",
-      "outputPath": "/Users/amiinahmed/Desktop/Github/ITPE3200ExamSub2/Backend/obj/",
+      "projectPath": "C:\\Users\\karia\\ITPE3200-WebApp-Exam2\\ITPE3200ExamSub2\\Backend\\NoteApp.csproj",
+      "packagesPath": "C:\\Users\\karia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\karia\\ITPE3200-WebApp-Exam2\\ITPE3200ExamSub2\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/amiinahmed/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\karia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -7162,7 +7162,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

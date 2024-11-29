@@ -1,0 +1,57 @@
+/* ------------------------------------------------- */
+/* 1. Import Fonts */
+/* ------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ------------------------------------------------- */
+/* 2. Global Styles */
+/* ------------------------------------------------- */
+
+.body, .navbar, .sidebar, .content-wrapper, .create-post-container, .posts-header, .post, .noteContent, footer {
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+/* General Styles */
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #dae8f2;
+    margin: 0; /* Ensure no default margin affects the layout */
+    color: #4f4f4f;
+}
+
+/* ------------------------------------------------- */
+/* 3. Navbar Styles */
+/* ------------------------------------------------- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Keeps the navbar above other elements */
+    background-color: #bcd7d2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 56px;
+  }
+  
+  .navbar-brand .logo {
+    height: 40px;
+  }
+  
+  .navbar-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #bcd7d2;
+    color: #212529;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .navbar-buttons button:hover {
+    background-color: #bcd7d2;
+  }

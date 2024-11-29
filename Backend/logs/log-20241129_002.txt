@@ -1,0 +1,5 @@
+2024-11-29 00:31:54.495 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-29 00:31:54.567 +01:00 [INF] Now listening on: http://localhost:5264
+2024-11-29 00:31:54.580 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-29 00:31:54.590 +01:00 [INF] Hosting environment: Development
+2024-11-29 00:31:54.602 +01:00 [INF] Content root path: C:\Users\karia\ITPE3200-WebApp-Exam2\ITPE3200ExamSub2\Backend
