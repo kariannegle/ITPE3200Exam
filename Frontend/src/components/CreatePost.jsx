@@ -44,6 +44,9 @@ function CreatePost({ onPostCreated }) {
         setImage(null)
         document.getElementById("imagePreview").src = ""
         onPostCreated() // Refresh the posts list
+        setTimeout(() => {
+          setSuccess("")
+        }, 1500)
       } else {
         setError(response.data.message)
       }
