@@ -1,0 +1,24 @@
+2024-11-30 15:30:22.493 +01:00 [INF] User profile is available. Using '/Users/amiinahmed/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-11-30 15:30:22.873 +01:00 [INF] Now listening on: http://localhost:5264
+2024-11-30 15:30:22.877 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-30 15:30:22.880 +01:00 [INF] Hosting environment: Development
+2024-11-30 15:30:22.880 +01:00 [INF] Content root path: /Users/amiinahmed/Desktop/Github/ITPE3200ExamSub2/Backend
+2024-11-30 15:30:26.289 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-11-30 15:30:26.314 +01:00 [INF] CORS policy execution successful.
+2024-11-30 15:30:26.316 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-30 15:30:26.343 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-30 15:30:26.358 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-11-30 15:30:26.358 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-11-30 15:30:27.470 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-11-30 15:30:27.470 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-11-30 15:30:27.535 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-11-30 15:30:27.535 +01:00 [INF]2024-11-30 15:30:27.560 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-11-30 15:30:27.561 +01:00 [INF] CORS policy execution successful.
+2024-11-30 15:30:27.562 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-30 15:30:27.562 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-11-30 15:30:27.562 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-11-30 15:30:27.563 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 1202.8642ms
+2024-11-30 15:30:27.564 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-30 15:30:27.568 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 1280.9506ms
+2024-11-30 15:30:27.571 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-11-30 15:30:27.571 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-11-30 15:30:27.572 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-11-30 15:30:27.572 +01:00 [INF]2024-11-30 15:30:27.583 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 20.8348ms
+2024-11-30 15:30:27.584 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-11-30 15:30:27.585 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 24.7957ms
+r.GetPosts (NoteApp)'
+2024-11-30 15:30:27.585 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 24.7957ms
