@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import axios from "../api/axios"
 import userImg from "../assets/image.png"
 import Comment from "./Comment"
+import CreatePost from "./CreatePost"
 
 const Posts = () => {
   const [posts, setPosts] = useState([])
@@ -32,6 +33,7 @@ const Posts = () => {
   return (
     <div className="main-content mt-5">
       <div className="content-inner">
+        <CreatePost />
         <h1 className="posts-header">LATEST POSTS</h1>
         {error && <div className="alert alert-danger">{error}</div>}
         {posts.map((post) => (

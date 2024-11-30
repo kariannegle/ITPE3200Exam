@@ -42,6 +42,27 @@ function Comment({ comments }) {
           ))}
         </div>
       </div>
+      <form
+        asp-action="AddComment"
+        method="post"
+        class="comment-form mt-3"
+        aria-label="Add comment form"
+      >
+        <input type="hidden" name="postId" value="@Model.Id" />
+        <textarea
+          class="form-control"
+          name="Content"
+          placeholder="Add a comment"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="submitcomment btn btn-primary mt-3"
+          aria-label="Submit comment"
+        >
+          Comment
+        </button>
+      </form>
     </div>
   )
 }
