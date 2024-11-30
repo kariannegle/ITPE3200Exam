@@ -1,23 +1,22 @@
-// src/components/Register.js
-import React, { useState } from "react"
-import axios from "../api/axios"
+import React, { useState } from "react";
+import axios from "../api/axios";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  const [username, setUsername] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [confirmPassword, setConfirmPassword] = useState("")
-  const [error, setError] = useState("")
-  const [success, setSuccess] = useState("")
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setError("")
-    setSuccess("")
+    e.preventDefault();
+    setError("");
 
     if (password !== confirmPassword) {
-      setError("Passwords do not match.")
-      return
+      setError("Passwords do not match.");
+      return;
     }
 
     try {
@@ -25,66 +24,72 @@ const Register = () => {
         username,
         email,
         password,
-        confirmPassword,
-      })
-
-      console.log(response.data) // Log the response data to the console
-      if (response.data.success) {
-        setSuccess("Registration successful! You can now log in.")
-      } else {
-        setError(response.data.errors.join(", "))
-      }
+      });
+      // Handle successful registration
+      navigate("/login");
     } catch (error) {
-      setError("An error occurred during registration.")
+      setError("Registration failed. Please try again.");
     }
-  }
+  };
 
   return (
-    <div>
-      <h1>Register</h1>
+    <div className="container mt-5">
+      <h2>Register</h2>
+      {error && <div className="alert alert-danger">{error}</div>}
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Username</label>
+        <div className="form-group">
+          <label htmlFor="username" className="control-label">Username</label>
           <input
             type="text"
+            className="form-control"
+            id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Email</label>
+        <div className="form-group">
+          <label htmlFor="email" className="control-label">Email</label>
           <input
             type="email"
+            className="form-control"
+            id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Password</label>
+        <div className="form-group">
+          <label htmlFor="password" className="control-label">Password</label>
           <input
             type="password"
+            className="form-control"
+            id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Confirm Password</label>
+        <div className="form-group">
+          <label htmlFor="confirmPassword" className="control-label">Confirm Password</label>
           <input
             type="password"
+            className="form-control"
+            id="confirmPassword"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />
         </div>
-        {error && <p style={{ color: "red" }}>{error}</p>}
-        {success && <p style={{ color: "green" }}>{success}</p>}
-        <button type="submit">Register</button>
+        <div className="form-group">
+          <button type="submit" className="btn btn-primary" style={{ marginTop: "10px", marginBottom: "20px" }}>Register</button>
+        </div>
       </form>
+      <div>
+        <a href="/login">Already have an account? Login</a>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;
