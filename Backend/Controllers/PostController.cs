@@ -37,7 +37,7 @@ namespace NoteApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreatePost([FromForm] string Content, [FromForm] string Username, [FromForm] IFormFile Image)
+        public async Task<IActionResult> CreatePost([FromForm] string Content, [FromForm] string Username, [FromForm] IFormFile? Image)
         {
             try
             {

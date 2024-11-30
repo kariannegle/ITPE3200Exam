@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import axios from "../api/axios"
 
-function CreatePost() {
+function CreatePost({ onPostCreated }) {
   const [content, setContent] = useState("")
   const [image, setImage] = useState(null)
-  const [username, setUsername] = useState("cool") // Replace with actual username
+  const [username] = useState("cool") // Replace with actual username
   const [error, setError] = useState("")
   const [success, setSuccess] = useState("")
 
@@ -43,6 +43,7 @@ function CreatePost() {
         setContent("")
         setImage(null)
         document.getElementById("imagePreview").src = ""
+        onPostCreated() // Refresh the posts list
       } else {
         setError(response.data.message)
       }

@@ -9,31 +9,35 @@ const Posts = () => {
   const [posts, setPosts] = useState([])
   const [error, setError] = useState("")
 
-  useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await axios.get("/post")
-        if (response.data && response.data.$values) {
-          const transformedPosts = response.data.$values.map((post) => ({
-            ...post,
-            comments: post.comments.$values,
-          }))
-          setPosts(transformedPosts)
-        } else {
-          setError("Unexpected response format")
-        }
-      } catch (error) {
-        setError("An error occurred while fetching posts.")
+  const fetchPosts = async () => {
+    try {
+      const response = await axios.get("/post")
+      if (response.data && response.data.$values) {
+        const transformedPosts = response.data.$values.map((post) => ({
+          ...post,
+          comments: post.comments.$values,
+        }))
+        // Sort posts by creation date in descending order
+        transformedPosts.sort(
+          (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+        )
+        setPosts(transformedPosts)
+      } else {
+        setError("Unexpected response format")
       }
+    } catch (error) {
+      setError("An error occurred while fetching posts.")
     }
+  }
 
+  useEffect(() => {
     fetchPosts()
   }, [])
 
   return (
     <div className="main-content mt-5">
       <div className="content-inner">
-        <CreatePost />
+        <CreatePost onPostCreated={fetchPosts} />
         <h1 className="posts-header">LATEST POSTS</h1>
         {error && <div className="alert alert-danger">{error}</div>}
         {posts.map((post) => (
