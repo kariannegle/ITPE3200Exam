@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using NoteApp.Models;
 using NoteApp.Repositories;
+using System;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace NoteApp.Controllers
@@ -35,17 +37,33 @@ namespace NoteApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreatePost([FromBody] Post post)
+        public async Task<IActionResult> CreatePost([FromForm] string Content, [FromForm] string Username, [FromForm] IFormFile? Image)
         {
             try
             {
-                if (ModelState.IsValid)
+                if (string.IsNullOrEmpty(Content) || string.IsNullOrEmpty(Username))
                 {
-                    await _postRepository.CreatePostAsync(post);
-                    return Ok(new { success = true });
+                    return BadRequest(new { success = false, message = "Content and Username are required." });
                 }
 
-                return BadRequest(new { success = false, message = "Invalid post data." });
+                var post = new Post
+                {
+                    Content = Content,
+                    Username = Username,
+                    CreatedAt = DateTime.UtcNow
+                };
+
+                if (Image != null && Image.Length > 0)
+                {
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        await Image.CopyToAsync(memoryStream);
+                        post.ImageData = memoryStream.ToArray();
+                    }
+                }
+
+                await _postRepository.CreatePostAsync(post);
+                return Ok(new { success = true });
             }
             catch (Exception ex)
             {
