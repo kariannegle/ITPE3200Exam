@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using NoteApp.Models;
 using NoteApp.Repositories;
-using System.Threading.Tasks;
-using System;
 
 namespace NoteApp.Controllers
 {
-    public class UserController : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UserController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
         private readonly IPostRepository _postRepository;
@@ -19,124 +19,80 @@ namespace NoteApp.Controllers
             _logger = logger;
         }
 
+        // GET: api/user/settings
+        [HttpGet("settings")]
         public IActionResult Settings()
         {
             try
             {
-                _logger.LogInformation("Accessed Settings page.");
-                var model = new EditProfileViewModel();
-                return View(model);
+                _logger.LogInformation("Accessed user settings.");
+                var model = new EditProfileViewModel(); // Ideally, fetch the user's settings using the repository.
+                return Ok(model); // Return JSON data instead of rendering a view.
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred while accessing the settings page.");
-                return RedirectToAction("Error", "Error");
+                _logger.LogError(ex, "An error occurred while accessing user settings.");
+                return StatusCode(500, new { message = "Internal server error" });
             }
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Settings(EditProfileViewModel model)
+        // PUT: api/user/settings
+        [HttpPut("settings")]
+        public async Task<IActionResult> Settings([FromBody] EditProfileViewModel model)
         {
             try
             {
                 if (!ModelState.IsValid)
                 {
-                    _logger.LogWarning("Invalid model state for settings update.");
-                    return View(model);
+                    return BadRequest(ModelState);
                 }
 
                 var user = await _userRepository.GetUserAsync(User);
                 if (user == null)
                 {
-                    _logger.LogWarning("User not found during settings update.");
-                    return RedirectToAction("Login", "Account");
+                    return Unauthorized(new { message = "User not found" });
                 }
 
-                // Update username
+                // Update user settings
                 if (user.UserName != model.Username)
                 {
                     if (string.IsNullOrEmpty(model.Username))
                     {
-                        ModelState.AddModelError(string.Empty, "Username cannot be empty.");
-                        return View(model);
+                        return BadRequest(new { message = "Username cannot be null or empty" });
                     }
+
                     var setUsernameResult = await _userRepository.SetUserNameAsync(user, model.Username);
                     if (!setUsernameResult.Succeeded)
                     {
-                        _logger.LogWarning("Failed to update username for user {UserId}", user.Id);
-                        foreach (var error in setUsernameResult.Errors)
-                        {
-                            ModelState.AddModelError(string.Empty, error.Description);
-                        }
-                        return View(model);
-                    }
-                }
-
-                // Update email
-                if (user.Email != model.Email)
-                {
-                    if (string.IsNullOrEmpty(model.Email))
-                    {
-                        ModelState.AddModelError(string.Empty, "Email cannot be empty.");
-                        return View(model);
-                    }
-                    var setEmailResult = await _userRepository.SetEmailAsync(user, model.Email);
-                    if (!setEmailResult.Succeeded)
-                    {
-                        _logger.LogWarning("Failed to update email for user {UserId}", user.Id);
-                        foreach (var error in setEmailResult.Errors)
-                        {
-                            ModelState.AddModelError(string.Empty, error.Description);
-                        }
-                        return View(model);
-                    }
-                }
-
-                // Change password
-                if (!string.IsNullOrEmpty(model.NewPassword))
-                {
-                    if (string.IsNullOrEmpty(model.CurrentPassword))
-                    {
-                        ModelState.AddModelError(string.Empty, "Current password is required.");
-                        return View(model);
-                    }
-
-                    var changePasswordResult = await _userRepository.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
-                    if (!changePasswordResult.Succeeded)
-                    {
-                        _logger.LogWarning("Failed to change password for user {UserId}", user.Id);
-                        foreach (var error in changePasswordResult.Errors)
-                        {
-                            ModelState.AddModelError(string.Empty, error.Description);
-                        }
-                        return View(model);
+                        return BadRequest(setUsernameResult.Errors);
                     }
                 }
 
                 await _userRepository.RefreshSignInAsync(user);
                 _logger.LogInformation("Settings updated successfully for user {UserId}", user.Id);
-                return RedirectToAction("Index", "Post");
+                return Ok(new { message = "Settings updated successfully" });
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred while updating settings for user.");
-                return RedirectToAction("Error", "Error");
+                _logger.LogError(ex, "An error occurred while updating user settings.");
+                return StatusCode(500, new { message = "Internal server error" });
             }
         }
 
-        // View any user's profile
-        public async Task<IActionResult> Profile(string? userId)
+        // GET: api/user/{userId}/profile
+        [HttpGet("{userId}/profile")]
+        public async Task<IActionResult> Profile(string userId)
         {
             try
             {
                 if (string.IsNullOrEmpty(userId))
                 {
-                    // If no userId is provided, show the current user's profile
+                    // If no userId is provided, attempt to show the current user's profile.
                     userId = await _userRepository.GetUserIdAsync(User);
                     if (userId == null)
                     {
-                        _logger.LogWarning("No user is logged in and no userId was provided.");
-                        return RedirectToAction("Login", "Account");
+                        _logger.LogWarning("No user is logged in, and no userId was provided.");
+                        return Unauthorized(new { message = "User is not logged in" });
                     }
                 }
 
@@ -144,7 +100,7 @@ namespace NoteApp.Controllers
                 if (user == null)
                 {
                     _logger.LogWarning("User with ID {UserId} not found.", userId);
-                    return NotFound("User not found.");
+                    return NotFound(new { message = "User not found" });
                 }
 
                 var posts = await _postRepository.GetPostsByUserIdAsync(userId);
@@ -153,18 +109,18 @@ namespace NoteApp.Controllers
                 var model = new UserProfileViewModel
                 {
                     UserId = user.Id,
-                    Username = user.UserName,
-                    ProfilePictureUrl = "/images/default-profile.png", // Update this if you have profile pictures
-                    Posts = posts.ToList()
+                    Username = user.UserName ?? string.Empty,
+                    Posts = posts.ToList(),
+                    ProfilePictureUrl = "/images/default-profile.png" // Optional property
                 };
 
-                _logger.LogInformation("Displaying profile for user {UserId}.", userId);
-                return View(model);
+                _logger.LogInformation("Returning profile for user {UserId}.", userId);
+                return Ok(model); // Return profile data as JSON for the frontend to render.
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred while displaying the profile for user {UserId}.", userId);
-                return RedirectToAction("Error", "Error");
+                _logger.LogError(ex, "An error occurred while retrieving the profile for user {UserId}.", userId);
+                return StatusCode(500, new { message = "Internal server error" });
             }
         }
     }

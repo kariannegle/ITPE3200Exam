@@ -1,12 +1,13 @@
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Serilog;
 using System.Diagnostics;
 using NoteApp.Models;
 
 namespace NoteApp.Controllers
 {
-    public class ErrorController : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class ErrorController : ControllerBase
     {
         private readonly ILogger<ErrorController> _logger;
 
@@ -15,7 +16,8 @@ namespace NoteApp.Controllers
             _logger = logger;
         }
 
-        [Route("Error")]
+        // GET: api/error/unhandled
+        [HttpGet("unhandled")]
         public IActionResult Error()
         {
             // Get the exception details
@@ -25,13 +27,11 @@ namespace NoteApp.Controllers
                 _logger.LogError(exceptionHandlerPathFeature.Error, "Unhandled exception occurred.");
             }
 
-            var errorViewModel = new ErrorViewModel
+            return StatusCode(500, new
             {
-                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier,
-                Message = "An unexpected error occurred. Please try again later."
-            };
-
-            return View(errorViewModel); // It will look for the Error.cshtml in Views/Shared by default.
+                message = "An unexpected error occurred. Please try again later.",
+                requestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            });
         }
     }
 }

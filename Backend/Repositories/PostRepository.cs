@@ -1,11 +1,6 @@
 using NoteApp.Data;
 using NoteApp.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NoteApp.Repositories
 {
@@ -129,19 +124,6 @@ namespace NoteApp.Repositories
                 _logger.LogError(ex, "An error occurred while fetching posts for user {UserId}", userId);
                 throw; // Re-throw to let higher-level handling (e.g., controller) manage it
             }
-        }
-
-        public async Task<IEnumerable<Post>> GetPostsAsync()
-        {
-            return await _context.Posts
-                .Include(p => p.Comments)
-                .ToListAsync();
-        }
-
-        public async Task CreatePostAsync(Post post)
-        {
-            _context.Posts.Add(post);
-            await _context.SaveChangesAsync();
         }
     }
 }

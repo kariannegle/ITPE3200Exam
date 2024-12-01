@@ -1,0 +1,166 @@
+2024-12-01 16:42:43.528 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 16:42:43.585 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-01 16:42:43.586 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 16:42:43.586 +01:00 [INF] Hosting environment: Development
+2024-12-01 16:42:43.586 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend
+2024-12-01 16:47:00.029 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-01 16:47:00.040 +01:00 [INF] CORS policy execution successful.
+2024-12-01 16:47:00.040 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-01 16:47:00.047 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-01 16:47:00.057 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Mi2024-12-01 16:47:00.057 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing2024-12-01 16:47:00.835 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."2024-12-01 16:47:00.835 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"2024-12-01 16:47:00.886 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Culture2024-12-01 16:47:00.886 +01:00 [IN2024-12-01 16:47:00.903 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-01 16:47:00.904 +01:00 [INF] CORS policy execution successful.
+2024-12-01 16:47:00.905 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-01 16:47:00.905 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Mi2024-12-01 16:47:00.905 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing2024-12-01 16:47:00.907 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 848.3408ms
+2024-12-01 16:47:00.907 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-01 16:47:00.912 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 884.3435ms
+2024-12-01 16:47:00.913 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."2024-12-01 16:47:00.913 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"2024-12-01 16:47:00.914 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Culture2024-12-01 16:47:00.914 +01:00 [IN2024-12-01 16:47:00.915 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 9.9729ms
+2024-12-01 16:47:00.916 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-01 16:47:00.916 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 12.9318ms
+2024-12-01 16:47:40.101 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - null null
+2024-12-01 16:47:40.109 +01:00 [INF] CORS policy execution successful.
+2024-12-01 16:47:40.112 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - 204 null null 11.9118ms
+2024-12-01 16:47:40.115 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/account/register - application/json 65
+2024-12-01 16:47:40.117 +01:00 [INF] CORS policy execution successful.
+2024-12-01 16:47:40.123 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.AccountController.Register (NoteApp)'
+2024-12-01 16:47:40.141 +01:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`12024-12-01 16:47:40.141 +01:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature S2024-12-01 16:47:40.143 +01:00 [INF] Executed action NoteApp.Controllers.AccountController.Register (NoteApp) in 1.1893ms
+2024-12-01 16:47:40.143 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.AccountController.Register (NoteApp)'
+2024-12-01 16:47:40.144 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Not2024-12-01 16:47:40.144 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'NoteApp.Repositories.IAccountRepository' while attempting to activate 'NoteApp.Controllers.AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method150(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCo2024-12-01 16:47:40.154 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/account/register - 500 null text/plain; charset=utf-8 39.567ms
+2024-12-01 16:57:47.192 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - null null
+2024-12-01 16:57:47.197 +01:00 [INF] CORS policy execution successful.
+2024-12-01 16:57:47.198 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - 204 null null 6.7059ms
+2024-12-01 16:57:47.206 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/account/register - application/json 63
+2024-12-01 16:57:47.207 +01:00 [INF] CORS policy execution successful.
+2024-12-01 16:57:47.209 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.AccountController.Register (NoteApp)'
+2024-12-01 16:57:47.210 +01:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`12024-12-01 16:57:47.210 +01:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature S2024-12-01 16:57:47.212 +01:00 [INF] Executed action NoteApp.Controllers.AccountController.Register (NoteApp) in 1.2086ms
+2024-12-01 16:57:47.212 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.AccountController.Register (NoteApp)'
+2024-12-01 16:57:47.213 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Not2024-12-01 16:57:47.213 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'NoteApp.Repositories.IAccountRepository' while attempting to activate 'NoteApp.Controllers.AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method150(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCo2024-12-01 16:57:47.219 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/account/register - 500 null text/plain; charset=utf-8 12.8024ms
+2024-12-01 17:02:06.560 +01:00 [INF] Application is shutting down...
+d HTTP/1.1 POST http://localhost:5264/api/account/register - 500 null text/plain; charset=utf-8 12.8024ms
+2024-12-01 17:02:06.560 +01:00 [INF] Application is shutting down...
+2024-12-01 17:02:16.199 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 17:02:16.257 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-01 17:02:16.258 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 17:02:16.258 +01:00 [INF] Hosting environment: Development
+2024-12-01 17:02:16.258 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend
+2024-12-01 17:03:06.034 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - null null
+2024-12-01 17:03:06.044 +01:00 [INF] CORS policy execution successful.
+2024-12-01 17:03:06.048 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - 204 null null 15.8657ms
+2024-12-01 17:03:06.051 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/account/register - application/json 63
+2024-12-01 17:03:06.052 +01:00 [INF] CORS policy execution successful.
+2024-12-01 17:03:06.052 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-01 17:03:06.060 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/account/register - 404 0 null 9.3737ms
+2024-12-01 17:03:06.061 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5264/api2024-12-01 17:03:06.061 +01:00 [INF] Request 2024-12-01 17:31:24.588 +01:00 [INF] Application is shutting down...
+pplication code. Request path: POST http://localhost:5264/api/account/register, Response status code: 404
+2024-12-01 17:31:24.588 +01:00 [INF] Application is shutting down...
+2024-12-01 17:34:54.701 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 17:34:54.760 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-01 17:34:54.760 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 17:34:54.761 +01:00 [INF] Hosting environment: Development
+2024-12-01 17:34:54.761 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend
+2024-12-01 17:35:29.796 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - null null
+2024-12-01 17:35:29.802 +01:00 [INF] CORS policy execution successful.
+2024-12-01 17:35:29.806 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - 204 null null 11.4147ms
+2024-12-01 17:35:29.809 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/account/register - application/json 67
+2024-12-01 17:35:29.810 +01:00 [INF] CORS policy execution successful.
+2024-12-01 17:35:29.811 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-01 17:35:29.818 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/account/register - 404 0 null 8.7696ms
+2024-12-01 17:35:29.819 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5264/api2024-12-01 17:35:29.819 +01:00 [INF] Request 2024-12-01 17:38:03.419 +01:00 [INF] Application is shutting down...
+pplication code. Request path: POST http://localhost:5264/api/account/register, Response status code: 404
+2024-12-01 17:38:03.419 +01:00 [INF] Application is shutting down...
+2024-12-01 17:38:11.628 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 17:38:11.679 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-01 17:38:11.680 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 17:38:11.680 +01:00 [INF] Hosting environment: Development
+2024-12-01 17:38:11.680 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend
+2024-12-01 17:38:21.276 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - null null
+2024-12-01 17:38:21.280 +01:00 [INF] CORS policy execution successful.
+2024-12-01 17:38:21.284 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5264/api/account/register - 204 null null 8.5116ms
+2024-12-01 17:38:21.286 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/account/register - application/json 67
+2024-12-01 17:38:21.287 +01:00 [INF] CORS policy execution successful.
+2024-12-01 17:38:21.288 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-01 17:38:21.299 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.AccountController.Register (NoteApp)'
+2024-12-01 17:38:21.309 +01:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`12024-12-01 17:38:21.309 +01:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature S2024-12-01 17:38:21.359 +01:00 [WRN] Invalid registration model state for user: null
+2024-12-01 17:38:21.361 +01:00 [INF] Executing ViewResult, running view Register.
+2024-12-01 17:38:21.362 +01:00 [ERR] The view 'Register' was not found. Searched locations: ["/Views/Account/Register.cshtml","/Views/Shared/Register.cshtml"]
+2024-12-01 17:38:21.365 +01:00 [INF] Executed action NoteApp.Controllers.AccountController.Register (NoteApp) in 55.089ms
+2024-12-01 17:38:21.365 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.AccountController.Register (NoteApp)'
+2024-12-01 17:38:21.366 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Register' was not found. The 2024-12-01 17:38:21.366 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Register' was not found. The following locations were searched:
+/Views/Account/Register.cshtml
+/Views/Shared/Register.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCo2024-12-01 17:38:21.373 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/account/register - 500 null text/plain; charset=utf-8 86.5122ms
+2024-12-01 17:42:10.219 +01:00 [INF] Application is shutting down...
+d HTTP/1.1 POST http://localhost:5264/api/account/register - 500 null text/plain; charset=utf-8 86.5122ms
+2024-12-01 17:42:10.219 +01:00 [INF] Application is shutting down...
+2024-12-01 17:43:22.416 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 17:43:22.473 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-01 17:43:22.474 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 17:43:22.474 +01:00 [INF] Hosting environment: Development
+2024-12-01 17:43:22.474 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend
+:43:22.474 +01:00 [INF] Hosting environment: Development
+2024-12-01 17:43:22.474 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend
+2024-12-01 19:47:53.213 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 19:47:53.269 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-01 19:47:53.270 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 19:47:53.270 +01:00 [INF] Hosting environment: Development
+2024-12-01 19:47:53.270 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend
+:47:53.270 +01:00 [INF] Hosting environment: Development
+2024-12-01 19:47:53.270 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend

@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace NoteApp.Models
@@ -12,6 +10,8 @@ namespace NoteApp.Models
         [MaxLength(1000, ErrorMessage = "Content cannot exceed 1000 characters.")]
         public string Content { get; set; } = string.Empty;
 
+        public byte[]? ImageData { get; set; } // Image stored as byte array
+
         public DateTime CreatedAt { get; set; }
 
         [Required(ErrorMessage = "User ID is required.")]
@@ -23,8 +23,5 @@ namespace NoteApp.Models
         public string Username { get; set; } = string.Empty;
 
         public List<Comment> Comments { get; set; } = new();
-
-
-        public byte[]? ImageData { get; set; } // Image stored as byte array
     }
 }
