@@ -14,16 +14,16 @@ namespace NoteApp.Models
         [MaxLength(500, ErrorMessage = "Content cannot exceed 500 characters.")]
         public string Content { get; set; } = string.Empty;
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; }
 
-        [Required(ErrorMessage = "User ID is required.")]
+        
         [MaxLength(50, ErrorMessage = "User ID cannot exceed 50 characters.")]
-        public string UserId { get; set; } = string.Empty;
+        public string? UserId { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Username is required.")]
+        
         [MaxLength(50, ErrorMessage = "Username cannot exceed 50 characters.")]
-        public string Username { get; set; } = string.Empty;
+        public string? Username { get; set; } = string.Empty;
 
-        public Post Post { get; set; }
+        public Post? Post { get; set; }
     }
 }

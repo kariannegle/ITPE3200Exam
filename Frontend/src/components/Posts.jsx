@@ -1,23 +1,24 @@
-// src/components/Posts.js
 import React, { useEffect, useState } from "react"
 import axios from "../api/axios"
 import userImg from "../assets/image.png"
-import Comment from "./Comment"
 import CreatePost from "./CreatePost"
+import Comments from "./Comment"
 
 const Posts = () => {
   const [posts, setPosts] = useState([])
   const [error, setError] = useState("")
+  const [loading, setLoading] = useState(true)
 
   const fetchPosts = async () => {
+    setLoading(true)
+    setError("")
     try {
       const response = await axios.get("/post")
       if (response.data && response.data.$values) {
         const transformedPosts = response.data.$values.map((post) => ({
           ...post,
-          comments: post.comments.$values,
+          comments: post.comments?.$values || [],
         }))
-        // Sort posts by creation date in descending order
         transformedPosts.sort(
           (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
         )
@@ -25,14 +26,28 @@ const Posts = () => {
       } else {
         setError("Unexpected response format")
       }
-    } catch (error) {
+    } catch (err) {
       setError("An error occurred while fetching posts.")
+    } finally {
+      setLoading(false)
     }
   }
 
   useEffect(() => {
     fetchPosts()
   }, [])
+
+  const formatDate = (dateString) => {
+    return new Date(dateString).toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    })
+  }
+
+  if (loading) return <p>Loading posts...</p>
 
   return (
     <div className="main-content mt-5">
@@ -68,7 +83,7 @@ const Posts = () => {
                   </div>
                   <a
                     className="nav-link text-black"
-                    href="/"
+                    href="#"
                     aria-label="User profile"
                   >
                     <span className="username" aria-label="Username">
@@ -76,19 +91,15 @@ const Posts = () => {
                     </span>
                   </a>
                   <div className="post-date" aria-label="Post date">
-                    {new Date(post.createdAt).toLocaleDateString()}
+                    {formatDate(post.createdAt)}
                   </div>
                 </div>
-                {post.imageData ? (
-                  <div className="noteContentWithImage">
-                    <p>{post.content}</p>
-                  </div>
-                ) : (
-                  <div className=""></div>
-                )}
+                <div className="noteContentWithImage">
+                  <p>{post.content}</p>
+                </div>
               </div>
-              {/* Comments section */}
-              <Comment comments={post.comments} />
+              {/* Comments Section */}
+              <Comments comments={post.comments} postId={post.id} />
             </div>
           </div>
         ))}

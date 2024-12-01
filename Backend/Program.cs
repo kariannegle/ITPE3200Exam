@@ -45,6 +45,7 @@ builder.Services.AddCors(options =>
 
 // Register the repositories
 builder.Services.AddScoped<IPostRepository, PostRepository>();
+builder.Services.AddScoped<ICommentRepository, CommentRepository>(); // Ensure this line is present
 
 var app = builder.Build();
 
@@ -54,7 +55,7 @@ app.UseCors("AllowSpecificOrigin");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-// Remove authentication and authorization middleware
+// Remove authentication and authorization middleware if not needed
 // app.UseAuthentication();
 // app.UseAuthorization();
 
