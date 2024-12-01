@@ -1,5 +1,6 @@
 // AccountController.cs
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 using NoteApp.Models;
 using NoteApp.Repositories;
 using Microsoft.Extensions.Logging;
@@ -8,8 +9,9 @@ using System.Threading.Tasks;
 namespace NoteApp.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class AccountController : Controller
+    [Route("api/[controller]")]
+    [EnableCors("AllowReactApp")]
+    public class AccountController : ControllerBase
     {
         private readonly IAccountRepository _accountRepository;
         private readonly ILogger<AccountController> _logger;
@@ -20,16 +22,17 @@ namespace NoteApp.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        [Route("GetAccount")]
+        // GET api/account/accountinfo (for demonstration)
+        [HttpGet("accountinfo")]
         public IActionResult GetAccount()
         {
-            return View();
+            // Returning a placeholder view or account data if needed
+            return Ok(new { message = "Account Info" });
         }
 
-        [HttpPost]
-        [Route("CreateAccount")]
-        public async Task<IActionResult> CreateAccount(RegisterViewModel model)
+        // POST api/account/register
+        [HttpPost("register")]
+        public async Task<IActionResult> Register(RegisterViewModel model)
         {
             try
             {
@@ -39,10 +42,9 @@ namespace NoteApp.Controllers
                     if (result.Succeeded)
                     {
                         _logger.LogInformation("User registered successfully with username: {Username}", model.Username);
-                        return RedirectToAction("Index", "Post");
+                        return Ok(new { message = "User registered successfully" });
                     }
 
-                    // Log validation errors from the registration process
                     foreach (var error in result.Errors)
                     {
                         _logger.LogWarning("Registration error: {ErrorDescription}", error.Description);
@@ -53,24 +55,17 @@ namespace NoteApp.Controllers
                 {
                     _logger.LogWarning("Invalid registration model state for user: {Username}", model.Username);
                 }
-                return Ok();
+                return BadRequest(ModelState);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred during registration for user: {Username}", model.Username);
-                return RedirectToAction("Error", "Error");
+                return StatusCode(500, "Internal server error");
             }
         }
 
-        [HttpGet]
-        [Route("Login")]
-        public IActionResult Login()
-        {
-            return Ok();
-        }
-
-        [HttpPost]
-        [Route("Login")]
+        // POST api/account/login
+        [HttpPost("login")]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             try
@@ -81,40 +76,39 @@ namespace NoteApp.Controllers
                     if (result.Succeeded)
                     {
                         _logger.LogInformation("User logged in successfully with username: {Username}", model.Username);
-                        return RedirectToAction("Index", "Post");
+                        return Ok(new { message = "Login successful" });
                     }
 
-                    // Log the invalid login attempt
                     _logger.LogWarning("Invalid login attempt for user: {Username}", model.Username);
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    return Unauthorized(new { message = "Invalid login attempt" });
                 }
                 else
                 {
                     _logger.LogWarning("Invalid login model state for user: {Username}", model.Username);
+                    return BadRequest(ModelState);
                 }
-                return Ok();
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred during login for user: {Username}", model.Username);
-                return RedirectToAction("Error", "Error");
+                return StatusCode(500, "Internal server error");
             }
         }
 
-        [HttpPost]
-        [Route("Logout")]
+        // POST api/account/logout
+        [HttpPost("logout")]
         public async Task<IActionResult> Logout()
         {
             try
             {
                 await _accountRepository.LogoutAsync();
                 _logger.LogInformation("User logged out successfully.");
-                return RedirectToAction("Index", "Post");
+                return Ok(new { message = "User logged out successfully" });
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred during logout.");
-                return RedirectToAction("Error", "Error");
+                return StatusCode(500, "Internal server error");
             }
         }
     }

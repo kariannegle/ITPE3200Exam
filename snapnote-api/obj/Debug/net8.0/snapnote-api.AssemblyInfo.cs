@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("snapnote-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f212c0cc306c42cb4905a635864f330fa078a3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9eac062d91ab3409c90658fe961d2253cc5eea32")]
 [assembly: System.Reflection.AssemblyProductAttribute("snapnote-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("snapnote-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

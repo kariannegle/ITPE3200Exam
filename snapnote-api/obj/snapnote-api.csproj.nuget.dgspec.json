@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\karia\\ITPE3200-WebApp-Exam2\\ITPE3200ExamSub2\\snapnote-api\\snapnote-api.csproj": {}
+    "/Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api/snapnote-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\karia\\ITPE3200-WebApp-Exam2\\ITPE3200ExamSub2\\snapnote-api\\snapnote-api.csproj": {
+    "/Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api/snapnote-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\karia\\ITPE3200-WebApp-Exam2\\ITPE3200ExamSub2\\snapnote-api\\snapnote-api.csproj",
+        "projectUniqueName": "/Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api/snapnote-api.csproj",
         "projectName": "snapnote-api",
-        "projectPath": "C:\\Users\\karia\\ITPE3200-WebApp-Exam2\\ITPE3200ExamSub2\\snapnote-api\\snapnote-api.csproj",
-        "packagesPath": "C:\\Users\\karia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\karia\\ITPE3200-WebApp-Exam2\\ITPE3200ExamSub2\\snapnote-api\\obj\\",
+        "projectPath": "/Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api/snapnote-api.csproj",
+        "packagesPath": "/Users/annacornelia/.nuget/packages/",
+        "outputPath": "/Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\karia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/annacornelia/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -54,6 +58,12 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -129,7 +139,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

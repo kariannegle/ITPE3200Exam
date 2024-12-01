@@ -23,11 +23,12 @@ builder.Services.AddEndpointsApiExplorer(); // Enable Swagger endpoint discovery
 builder.Services.AddSwaggerGen(); // Enable Swagger generation
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowReactApp", policy =>
     {
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
+        policy.WithOrigins("http://localhost:3000") // Only allow the React frontend
+              .AllowAnyMethod()                    // Allow all HTTP methods
+              .AllowAnyHeader()                    // Allow any headers
+              .AllowCredentials();                 // Allow credentials (cookies, authentication tokens)
     });
 });
 
@@ -43,51 +44,57 @@ builder.Services.AddIdentity<User, IdentityRole>(options =>
     .AddEntityFrameworkStores<NoteAppContext>()
     .AddDefaultTokenProviders();
 
-// Add authentication middleware
-builder.Services.AddAuthentication();
+// Add CORS services
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:3000")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
 
-// Register the repositories
-builder.Services.AddScoped<IPostRepository, PostRepository>();
-builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+// Other service configurations
 builder.Services.AddScoped<IFriendRepository, FriendRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
+builder.Services.AddControllers();
 
+// Build the app once
 var app = builder.Build();
 
-Log.Information("Current Environment: {Environment}", app.Environment.EnvironmentName);
-
-// Handle errors and HSTS for production
-if (!app.Environment.IsDevelopment())
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "NoteApp API v1");
+        c.RoutePrefix = string.Empty;
+    });
+    app.UseHsts();
+}
+else
 {
     app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
 
-// Enable Swagger only in development (for security)
-
-app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "NoteApp API v1");
-    c.RoutePrefix = string.Empty; // Makes Swagger the default page
-});
-
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-// Apply CORS policy
-app.UseCors("AllowAll");
+// Apply CORS policy before authentication and authorization
+app.UseCors("AllowReactApp");
 
-// Use authentication and authorization middleware
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Map controllers
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Post}/{action=Index}/{id?}");
+app.MapControllers();
 
 app.Run();

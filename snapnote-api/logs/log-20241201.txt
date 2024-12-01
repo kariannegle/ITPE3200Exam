@@ -236,3 +236,78 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
 2024-12-01 19:07:33.137 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
 2024-12-01 19:07:33.261 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.2189ms
 2024-12-01 19:09:18.500 +01:00 [INF] Application is shutting down...
+2024-12-01 22:32:08.133 +01:00 [INF] Current Environment: Development
+2024-12-01 22:32:08.212 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 22:32:08.239 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 22:32:08.240 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 22:32:08.240 +01:00 [INF] Hosting environment: Development
+2024-12-01 22:32:08.240 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:00:23.953 +01:00 [INF] Application is shutting down...
+2024-12-01 23:00:34.719 +01:00 [INF] Current Environment: Development
+2024-12-01 23:00:34.794 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:00:34.820 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 23:00:34.821 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:00:34.821 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:00:34.821 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:08:04.038 +01:00 [INF] Application is shutting down...
+2024-12-01 23:08:13.020 +01:00 [INF] Current Environment: Development
+2024-12-01 23:08:13.094 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:08:13.123 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 23:08:13.124 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:08:13.124 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:08:13.124 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:17:17.200 +01:00 [INF] Application is shutting down...
+2024-12-01 23:17:28.356 +01:00 [INF] Current Environment: Development
+2024-12-01 23:17:28.426 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:17:28.451 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 23:17:28.452 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:17:28.452 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:17:28.452 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:18:35.186 +01:00 [INF] Application is shutting down...
+2024-12-01 23:18:40.612 +01:00 [INF] Current Environment: Development
+2024-12-01 23:18:40.676 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:18:40.701 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 23:18:40.702 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:18:40.702 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:18:40.702 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:20:34.652 +01:00 [INF] Application is shutting down...
+2024-12-01 23:20:47.312 +01:00 [INF] Current Environment: Development
+2024-12-01 23:20:47.387 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:20:47.410 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 23:20:47.411 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:20:47.411 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:20:47.411 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:22:48.226 +01:00 [INF] Application is shutting down...
+2024-12-01 23:24:31.820 +01:00 [INF] Current Environment: Development
+2024-12-01 23:24:31.897 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:24:31.920 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 23:24:31.921 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:24:31.921 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:24:31.921 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:24:37.829 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/ - null null
+2024-12-01 23:24:37.840 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/ - 301 0 null 11.7846ms
+2024-12-01 23:24:37.874 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 23:24:37.899 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 25.4805ms
+2024-12-01 23:24:37.918 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger-ui.css - null null
+2024-12-01 23:24:37.921 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger-ui-bundle.js - null null
+2024-12-01 23:24:37.922 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger-ui-standalone-preset.js - null null
+2024-12-01 23:24:37.932 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-12-01 23:24:37.932 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-12-01 23:24:37.933 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger-ui-standalone-preset.js - 200 339486 text/javascript 11.7284ms
+2024-12-01 23:24:37.933 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger-ui.css - 200 143943 text/css 15.0401ms
+2024-12-01 23:24:37.936 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-12-01 23:24:37.936 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger-ui-bundle.js - 200 1096145 text/javascript 15.1415ms
+2024-12-01 23:24:38.046 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 23:24:38.093 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.9746ms
+2024-12-01 23:24:38.096 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/favicon-16x16.png - null null
+2024-12-01 23:24:38.096 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/favicon-32x32.png - null null
+2024-12-01 23:24:38.097 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-12-01 23:24:38.097 +01:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2024-12-01 23:24:38.097 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/favicon-32x32.png - 200 628 image/png 0.614ms
+2024-12-01 23:24:38.097 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/favicon-16x16.png - 200 665 image/png 1.1992ms
+2024-12-01 23:27:38.983 +01:00 [INF] Application is shutting down...
+2024-12-01 23:27:44.354 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:27:44.405 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 23:27:44.406 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:27:44.406 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:27:44.406 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api

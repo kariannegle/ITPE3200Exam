@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import CreatePost from '../components/CreatePost';
+import PostFeed from '../components/PostFeed';
 
-function Home() {
-    return (
-        <div>
-            <h1>Welcome to NoteApp</h1>
-            <p>This is the home page.</p>
-        </div>
-    );
-}
+
+const Home = () => {
+const [posts, setPosts] = useState([]);
+
+const handlePostCreated = (newPost) => {
+    setPosts([newPost, ...posts]);
+};
+
+return (
+    <div className="home-page">
+        <CreatePost onPostCreated={handlePostCreated} />
+        <PostFeed posts={posts} />
+    </div>
+  );
+};
 
 export default Home;
