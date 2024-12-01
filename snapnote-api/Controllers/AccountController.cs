@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 using NoteApp.Models;
 using NoteApp.Repositories;
 
@@ -17,29 +18,43 @@ namespace NoteApp.Controllers
             _logger = logger;
         }
 
+        [HttpOptions("register")]
+        public IActionResult PreflightForRegister()
+        {
+            Response.Headers.Add("Access-Control-Allow-Origin", "http://localhost:3000");
+            Response.Headers.Add("Access-Control-Allow-Methods", "POST, OPTIONS");
+            Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
+            Response.Headers.Add("Access-Control-Allow-Credentials", "true");
+            return Ok();
+}
         // POST: api/account/register
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
         {
             try
             {
-                if (ModelState.IsValid)
-                {
-                    var result = await _accountRepository.RegisterAsync(model);
-                    if (result.Succeeded)
-                    {
-                        _logger.LogInformation("User registered successfully with username: {Username}", model.Username);
-                        return Ok(new { message = "Registration successful" });
-                    }
+                _logger.LogInformation("Received registration request for username: {Username}", model.Username);
 
-                    // Log validation errors from the registration process
-                    return BadRequest(result.Errors);
-                }
-                else
+                if (!ModelState.IsValid)
                 {
                     _logger.LogWarning("Invalid registration model state for user: {Username}", model.Username);
                     return BadRequest(ModelState);
                 }
+
+                var result = await _accountRepository.RegisterAsync(model);
+                if (result.Succeeded)
+                {
+                    _logger.LogInformation("User registered successfully with username: {Username}", model.Username);
+                    return Ok(new { message = "Registration successful" });
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    _logger.LogWarning("Registration error for user {Username}: {Error}", model.Username, error.Description);
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+
+                return BadRequest(ModelState);
             }
             catch (Exception ex)
             {

@@ -1,0 +1,18 @@
+2024-12-02 00:04:29.610 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/account/register - null null
+2024-12-02 00:04:29.621 +01:00 [INF] CORS policy execution successful.
+2024-12-02 00:04:29.623 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/account/register - 204 null n2024-12-02 002024-12-02 00:09:17.155 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/account/register - null null
+2024-12-02 00:09:17.159 +01:00 [INF] CORS policy execution successful.
+2024-12-02 00:09:17.160 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/account/register - 204 null n2024-12-02 002024-12-02 00:10:26.781 +01:00 [INF] Application is shutting down...
+lhost:5000/api/account/register - 204 null null 5.8766ms
+2024-12-02 00:10:26.781 +01:00 [INF] Application is shutting down...
+2024-12-02 00:10:38.288 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-02 00:10:38.344 +01:00 [INF] Now listening on: http://localhost:5000
+2024-12-02 00:10:38.344 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-02 00:10:38.345 +01:00 [INF] Hosting environment: Development
+2024-12-02 00:10:38.345 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-02 00:10:57.789 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/account/register - null null
+2024-12-02 00:10:57.795 +01:00 [INF] CORS policy execution successful.
+2024-12-02 00:10:57.798 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/account/register - 204 null null 10.4149ms
+2024-12-02 00:11:51.885 +01:00 [INF] Application is shutting down...
+F] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/account/register - 204 null null 10.4149ms
+2024-12-02 00:11:51.885 +01:00 [INF] Application is shutting down...

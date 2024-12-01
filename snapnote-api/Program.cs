@@ -36,16 +36,19 @@ builder.Services.AddIdentity<User, IdentityRole>(options =>
     .AddEntityFrameworkStores<NoteAppContext>()
     .AddDefaultTokenProviders();
 
-// Add CORS policy
+// Register CORS policy
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigin", builder =>
-    {
-        builder.WithOrigins("http://localhost:3000")
-            .AllowAnyMethod()
-            .AllowAnyHeader();
-    });
+    options.AddPolicy("AllowSpecificOrigin",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:3000")
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials();  // Add this to allow credentials (cookies, tokens, etc.)
+        });
 });
+
 
 // Register the repositories
 builder.Services.AddScoped<IPostRepository, PostRepository>();

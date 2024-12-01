@@ -164,3 +164,53 @@ d HTTP/1.1 POST http://localhost:5264/api/account/register - 500 null text/plain
 2024-12-01 19:47:53.270 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend
 :47:53.270 +01:00 [INF] Hosting environment: Development
 2024-12-01 19:47:53.270 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/Backend
+2024-12-01 23:38:59.519 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:38:59.609 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-01 23:38:59.610 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:38:59.610 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:38:59.611 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:45:37.397 +01:00 [INF] Application is shutting down...
+59.611 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:45:37.397 +01:00 [INF] Application is shutting down...
+2024-12-01 23:47:35.388 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:47:35.441 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-01 23:47:35.442 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:47:35.442 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:47:35.442 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:48:03.998 +01:00 [INF] Application is shutting down...
+35.442 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:48:03.998 +01:00 [INF] Application is shutting down...
+2024-12-01 23:48:07.573 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:48:07.622 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-01 23:48:07.623 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:48:07.623 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:48:07.623 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:49:41.696 +01:00 [INF] Application is shutting down...
+07.623 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:49:41.696 +01:00 [INF] Application is shutting down...
+2024-12-01 23:49:49.710 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:49:49.797 +01:00 [INF] Now listening on: http://localhost:5000
+2024-12-01 23:49:49.798 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:49:49.798 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:49:49.798 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:50:33.153 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html - null null
+2024-12-01 23:50:33.159 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-01 23:50:33.176 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/index.html - 404 0 null 24.1248ms
+2024-12-01 23:50:33.179 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/inde2024-12-01 23:50:33.179 +01:00 [IN2024-12-01 23:50:33.267 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2024-12-01 23:50:33.269 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 null 1.965ms
+2024-12-01 23:50:33.269 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favi2024-12-01 23:50:33.269 +01:00 [INF2024-12-01 23:50:37.999 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2024-12-01 23:50:38.001 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 1.863ms
+2024-12-01 23:50:38.001 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Re2024-12-01 23:50:38.001 2024-12-01 23:51:21.063 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2024-12-01 23:51:21.064 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 0.9984ms
+2024-12-01 23:51:21.064 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Re2024-12-01 23:51:21.064 2024-12-01 23:51:28.127 +01:00 [INF] Application is shutting down...
+ut being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2024-12-01 23:51:28.127 +01:00 [INF] Application is shutting down...
+2024-12-01 23:51:33.110 +01:00 [INF] User profile is available. Using '/Users/annacornelia/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-01 23:51:33.162 +01:00 [INF] Now listening on: http://localhost:5000
+2024-12-01 23:51:33.163 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 23:51:33.163 +01:00 [INF] Hosting environment: Development
+2024-12-01 23:51:33.163 +01:00 [INF] Content root path: /Users/annacornelia/Documents/GitHub/ITPE3200ExamSub2/snapnote-api
+2024-12-01 23:51:36.509 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2024-12-01 23:51:36.513 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-01 23:51:36.526 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 16.937ms
+2024-12-01 23:51:36.529 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Re2024-12-01 23:51:36.529 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
