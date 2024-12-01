@@ -1,0 +1,227 @@
+2024-12-01 18:22:23.377 +01:00 [INF] Current Environment: Development
+2024-12-01 18:22:23.428 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:22:23.598 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:22:23.601 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:22:23.601 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:22:23.603 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:24:03.850 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - null null
+2024-12-01 18:24:03.859 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-01 18:24:03.886 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - 404 0 null 36.6263ms
+2024-12-01 18:24:03.893 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5137/swagger/index.html, Response status code: 404
+2024-12-01 18:25:26.894 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - null null
+2024-12-01 18:25:26.898 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - 404 0 null 3.0001ms
+2024-12-01 18:25:26.905 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5137/swagger/index.html, Response status code: 404
+2024-12-01 18:25:43.097 +01:00 [INF] Application is shutting down...
+2024-12-01 18:25:54.591 +01:00 [INF] Current Environment: Development
+2024-12-01 18:25:54.661 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:25:54.699 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:25:54.701 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:25:54.702 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:25:54.703 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:26:06.314 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - null null
+2024-12-01 18:26:06.325 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-01 18:26:06.343 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - 404 0 null 29.6924ms
+2024-12-01 18:26:06.351 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5137/swagger/index.html, Response status code: 404
+2024-12-01 18:27:47.416 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - null null
+2024-12-01 18:27:47.422 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - 404 0 null 6.1848ms
+2024-12-01 18:27:47.431 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5137/swagger/index.html, Response status code: 404
+2024-12-01 18:27:51.189 +01:00 [INF] Application is shutting down...
+2024-12-01 18:27:57.096 +01:00 [INF] Current Environment: Development
+2024-12-01 18:27:57.165 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:27:57.199 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:27:57.202 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:27:57.203 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:27:57.204 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:28:02.141 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/ - null null
+2024-12-01 18:28:02.153 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/ - 301 0 null 12.514ms
+2024-12-01 18:28:02.158 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:28:02.193 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 34.4651ms
+2024-12-01 18:28:02.207 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger-ui-bundle.js - null null
+2024-12-01 18:28:02.207 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger-ui-standalone-preset.js - null null
+2024-12-01 18:28:02.208 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger-ui.css - null null
+2024-12-01 18:28:02.223 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-12-01 18:28:02.223 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-12-01 18:28:02.223 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-12-01 18:28:02.227 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger-ui.css - 200 143943 text/css 19.1774ms
+2024-12-01 18:28:02.227 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger-ui-standalone-preset.js - 200 339486 text/javascript 19.9781ms
+2024-12-01 18:28:02.229 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger-ui-bundle.js - 200 1096145 text/javascript 21.6067ms
+2024-12-01 18:28:02.451 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:28:02.465 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - NoteApp.Controllers.ErrorController.Error (snapnote-api). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-01 18:28:02.478 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 27.0786ms
+2024-12-01 18:28:02.593 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/favicon-32x32.png - null null
+2024-12-01 18:28:02.596 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-12-01 18:28:02.597 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/favicon-32x32.png - 200 628 image/png 3.1916ms
+2024-12-01 18:32:21.748 +01:00 [INF] Application is shutting down...
+2024-12-01 18:32:27.319 +01:00 [INF] Current Environment: Development
+2024-12-01 18:32:27.393 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:32:27.430 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:32:27.431 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:32:27.432 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:32:27.432 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:32:31.276 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:32:31.318 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 43.3395ms
+2024-12-01 18:32:31.490 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:32:31.504 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - NoteApp.Controllers.ErrorController.Error (snapnote-api). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-01 18:32:31.513 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 22.1288ms
+2024-12-01 18:32:35.093 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - null null
+2024-12-01 18:32:35.098 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-01 18:32:35.114 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - 404 0 null 20.9028ms
+2024-12-01 18:32:35.119 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5137/swagger/index.html, Response status code: 404
+2024-12-01 18:33:59.634 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:33:59.638 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 3.593ms
+2024-12-01 18:33:59.731 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:33:59.734 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - NoteApp.Controllers.ErrorController.Error (snapnote-api). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-01 18:33:59.739 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 7.855ms
+2024-12-01 18:34:02.231 +01:00 [INF] Application is shutting down...
+2024-12-01 18:34:07.222 +01:00 [INF] Current Environment: Development
+2024-12-01 18:34:07.309 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:34:07.349 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:34:07.351 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:34:07.352 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:34:07.352 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:34:09.766 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:34:09.813 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 47.4138ms
+2024-12-01 18:34:09.877 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:34:09.889 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - NoteApp.Controllers.ErrorController.Error (snapnote-api). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-01 18:34:09.899 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 22.6785ms
+2024-12-01 18:35:49.417 +01:00 [INF] Application is shutting down...
+2024-12-01 18:36:01.516 +01:00 [INF] Current Environment: Development
+2024-12-01 18:36:01.597 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:36:01.633 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:36:01.637 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:36:01.638 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:36:01.638 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:36:07.294 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:36:07.336 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 42.8329ms
+2024-12-01 18:36:07.412 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:36:07.423 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - NoteApp.Controllers.ErrorController.Error (snapnote-api). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-01 18:36:07.430 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 18.2043ms
+2024-12-01 18:36:18.464 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:36:18.475 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 10.5832ms
+2024-12-01 18:36:18.540 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:36:18.545 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - NoteApp.Controllers.ErrorController.Error (snapnote-api). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-01 18:36:18.548 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 8.3114ms
+2024-12-01 18:39:21.573 +01:00 [INF] Application is shutting down...
+2024-12-01 18:39:25.853 +01:00 [INF] Current Environment: Development
+2024-12-01 18:39:25.925 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:39:25.961 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:39:25.962 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:39:25.963 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:39:25.964 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:39:30.808 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:39:30.853 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 45.7281ms
+2024-12-01 18:39:31.020 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:39:31.062 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 41.4266ms
+2024-12-01 18:42:19.973 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:42:19.976 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 3.3461ms
+2024-12-01 18:42:20.149 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:42:20.154 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.0301ms
+2024-12-01 18:42:22.701 +01:00 [INF] Application is shutting down...
+2024-12-01 18:42:28.746 +01:00 [INF] Current Environment: Development
+2024-12-01 18:42:28.831 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:42:28.866 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:42:28.868 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:42:28.868 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:42:28.869 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:42:32.438 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:42:32.483 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 45.6593ms
+2024-12-01 18:42:32.565 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:42:32.609 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST Account" for actions - NoteApp.Controllers.AccountController.Login (snapnote-api),NoteApp.Controllers.AccountController.Logout (snapnote-api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-01 18:42:32.621 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 55.6038ms
+2024-12-01 18:46:59.684 +01:00 [INF] Application is shutting down...
+2024-12-01 18:47:08.378 +01:00 [INF] Current Environment: Development
+2024-12-01 18:47:08.450 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:47:08.483 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:47:08.485 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:47:08.487 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:47:08.487 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:47:12.021 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:47:12.065 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 44.2929ms
+2024-12-01 18:47:12.254 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:47:12.323 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.1973ms
+2024-12-01 18:53:56.420 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:53:56.423 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 3.3322ms
+2024-12-01 18:53:56.606 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:53:56.611 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.4429ms
+2024-12-01 18:54:05.270 +01:00 [INF] Application is shutting down...
+2024-12-01 18:54:10.406 +01:00 [INF] Current Environment: Development
+2024-12-01 18:54:10.485 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:54:10.520 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:54:10.523 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:54:10.524 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:54:10.525 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:54:12.824 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:54:12.867 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 42.5563ms
+2024-12-01 18:54:12.952 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:54:13.013 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.9554ms
+2024-12-01 18:56:29.520 +01:00 [INF] Application is shutting down...
+2024-12-01 18:56:34.182 +01:00 [INF] Current Environment: Development
+2024-12-01 18:56:34.257 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:56:34.293 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:56:34.294 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:56:34.295 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:56:34.296 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:56:36.614 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:56:36.659 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 45.9083ms
+2024-12-01 18:56:36.732 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:56:36.803 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.9365ms
+2024-12-01 18:57:52.042 +01:00 [INF] Application is shutting down...
+2024-12-01 18:57:56.665 +01:00 [INF] Current Environment: Development
+2024-12-01 18:57:56.740 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 18:57:56.774 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 18:57:56.776 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 18:57:56.777 +01:00 [INF] Hosting environment: Development
+2024-12-01 18:57:56.778 +01:00 [INF] Content root path: C:\Users\karia\2subapp\snapnote-api
+2024-12-01 18:58:02.393 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 18:58:02.454 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 61.7343ms
+2024-12-01 18:58:02.531 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 18:58:02.600 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.9255ms
