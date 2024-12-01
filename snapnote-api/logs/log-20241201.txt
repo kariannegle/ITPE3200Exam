@@ -225,3 +225,14 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
 2024-12-01 18:58:02.454 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 61.7343ms
 2024-12-01 18:58:02.531 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
 2024-12-01 18:58:02.600 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.9255ms
+2024-12-01 19:07:16.661 +01:00 [INF] Current Environment: Development
+2024-12-01 19:07:16.746 +01:00 [INF] User profile is available. Using 'C:\Users\karia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 19:07:16.782 +01:00 [INF] Now listening on: http://localhost:5137
+2024-12-01 19:07:16.783 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 19:07:16.784 +01:00 [INF] Hosting environment: Development
+2024-12-01 19:07:16.785 +01:00 [INF] Content root path: C:\Users\karia\ITPE3200-WebApp-Exam2\ITPE3200ExamSub2\snapnote-api
+2024-12-01 19:07:32.875 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/index.html - null null
+2024-12-01 19:07:32.978 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/index.html - 200 null text/html;charset=utf-8 104.9626ms
+2024-12-01 19:07:33.137 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - null null
+2024-12-01 19:07:33.261 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.2189ms
+2024-12-01 19:09:18.500 +01:00 [INF] Application is shutting down...
