@@ -155,89 +155,99 @@ html, body {
 /* 8. Create Post Section */
 /* ------------------------------------------------- */
 
+/* Create Post Section */
 .create-post-container { 
     display: flex; 
-    flex-direction: row; 
-    gap: 20px; 
+    justify-content: center; 
     padding: 20px; 
     background-color: #f7f9fc; 
     border-radius: 10px; 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    margin: 0 auto 20px auto;
+    margin: 20px auto; 
+    max-width: 800px; /* Restrict maximum width to center form */
     width: 100%; 
     box-sizing: border-box; 
-} 
+}
 
-.create-post-container .left-column, 
-.create-post-container .right-column { 
-    flex: 1; /* Allow both columns to grow equally */
+.create-post-form {
+    display: flex;
+    flex-direction: row; /* Align the columns beside each other */
+    gap: 20px; /* Add spacing between the two columns */
+    width: 100%;
+}
+
+.left-column, .right-column { 
+    flex: 1; /* Allow both columns to take equal space */
     display: flex;
     flex-direction: column; 
-} 
+}
 
-.create-post-container .left-column { 
-    align-items: center; 
-} 
+.left-column {
+    align-items: center; /* Center image and file input */
+}
 
-.create-post-container .custom-file-upload {  
-    background-color: #bcd7d2; 
-    color: #2f4f4f; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    align-self: flex-start; 
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #dfe6ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image keeps its aspect ratio and doesn't stretch */
+    border-radius: 5px;
+}
+
+.custom-file-upload {
+    background-color: #bcd7d2;
+    color: #2f4f4f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-} 
+}
 
-.create-post-container .custom-file-upload:hover { 
-    background-color: #86b0a9; 
+.custom-file-upload:hover {
+    background-color: #86b0a9;
     color: #ffffff;
-} 
+}
 
-.create-post-container .image-placeholder { 
-    width: 100%; 
-    height: 200px; 
-    background-color: #dfe6ed; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    font-size: 18px; 
-    color: #3D4A61; 
-    border-radius: 10px; 
-    margin-bottom: 15px; 
-    overflow: hidden; 
-    background-size: cover; /* Ensure background image covers the placeholder */
-    background-position: center; /* Center the background image */
-} 
-
-.create-post-container textarea#noteInput { 
-    width: 100%; 
-    height: 200px; 
-    padding: 10px; 
-    font-size: 16px; 
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
-    margin-bottom: 15px; 
-    background-color: #eef4f8; 
-    color: #4f4f4f; 
+.noteInput {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #eef4f8;
+    color: #4f4f4f;
     resize: vertical; /* Allow vertical resizing */
-} 
+}
 
-.create-post-container button.postbutton { 
-    background-color: #bcd7d2; 
-    color: #2f4f4f; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    align-self: flex-start; 
+.postbutton {
+    background-color: #bcd7d2;
+    color: #2f4f4f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
-} 
+    align-self: flex-start;
+}
 
-.create-post-container button.postbutton:hover { 
-    background-color: #86b0a9; 
-    color: #ffffff; 
+.postbutton:hover {
+    background-color: #86b0a9;
+    color: #ffffff;
 }
 
 /* Responsive Adjustments for Create Post Section */
