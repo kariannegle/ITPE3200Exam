@@ -2,10 +2,11 @@ import React, { useState } from "react"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import "./App.css"
 import Navbar from "./components/Navbar"
-import Posts from "./components/Posts"
-import Register from "./components/Register"
-import Login from "./components/Login"
-import Settings from "./components/Settings"
+import Posts from "./pages/Posts"
+import Register from "./pages/Register"
+import Login from "./pages/Login"
+import Settings from "./pages/Settings"
+import EditPost from "./pages/EditPost"
 
 const App = () => {
   const [isSignedIn, setIsSignedIn] = useState(false)
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/edit/:id" element={<EditPost />} />
           <Route path="/" element={<Posts />} />
           {/* Add other routes here */}
         </Routes>

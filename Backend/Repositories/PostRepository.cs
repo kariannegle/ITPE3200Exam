@@ -112,7 +112,6 @@ namespace NoteApp.Repositories
                 throw; // Re-throw to let higher-level handling (e.g., controller) manage it
             }
         }
-
         public async Task<IEnumerable<Post>> GetPostsByUserIdAsync(string userId)
         {
             try
