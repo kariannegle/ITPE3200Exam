@@ -5,31 +5,37 @@ const Logout = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const performLogout = async () => {
-      // Replace the URL with your backend endpoint for logout
-      const url = "/api/account/logout";
-
+    const handleLogout = async () => {
       try {
-        const response = await fetch(url, {
+        // Assuming your logout API is at this URL
+        const response = await fetch('http://localhost:5000/api/account/logout', {
           method: 'POST',
-          credentials: 'include',
+          credentials: 'include', // Important for session-based auth to include cookies
         });
 
         if (response.ok) {
           console.log('Logout successful');
+
+          // Redirect to the login page or homepage
           navigate('/login');
         } else {
           console.error('Logout failed');
+          alert('Failed to log out. Please try again.');
         }
       } catch (error) {
-        console.error('Error during logout:', error);
+        console.error('An error occurred while logging out:', error);
+        alert('An unexpected error occurred. Please try again later.');
       }
     };
 
-    performLogout();
-  }, [navigate]);
+    handleLogout();
+  }, [navigate]); // This will trigger when the component mounts
 
-  return null;
+  return (
+    <div className="logout-container">
+      <p>Logging you out...</p>
+    </div>
+  );
 };
 
 export default Logout;
