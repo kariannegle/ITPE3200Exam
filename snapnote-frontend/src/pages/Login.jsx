@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+  const { login } = useAuth(); // Get the login function from AuthContext
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -25,13 +26,13 @@ const Login = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
-        credentials: 'include', // Include cookies if needed
+        credentials: 'include', // Include cookies if session-based auth
       });
 
       if (response.ok) {
         console.log('Login successful');
-        // Navigate to the home page
-        navigate('/');
+        login(); // Update the authentication state in context
+        navigate('/'); // Redirect to home page after successful login
       } else {
         const errorData = await response.json();
         console.error('Login failed:', errorData);
