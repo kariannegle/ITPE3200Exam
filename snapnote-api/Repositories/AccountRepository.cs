@@ -20,29 +20,34 @@ namespace NoteApp.Repositories
         {
             try
             {
-                var user = new User { UserName = model.Username, Email = model.Email };
-                if (string.IsNullOrEmpty(model.Password))
+                var user = new User
                 {
-                    throw new ArgumentException("Password must not be null or empty.");
-                }
+                    UserName = model.Username,
+                    Email = model.Email
+                };
+
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    _logger.LogInformation("User registered and signed in successfully with username: {Username}", model.Username);
+                    _logger.LogInformation("User created successfully with username: {Username}", model.Username);
                 }
                 else
                 {
-                    _logger.LogWarning("User registration failed for username: {Username}. Errors: {Errors}", model.Username, string.Join(", ", result.Errors));
+                    foreach (var error in result.Errors)
+                    {
+                        _logger.LogWarning("User creation error: {ErrorDescription}", error.Description);
+                    }
                 }
+
                 return result;
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred during registration for user: {Username}", model.Username);
-                throw; // Re-throwing the exception to let the controller handle it if needed
+                _logger.LogError(ex, "An error occurred while creating user: {Username}", model.Username);
+                throw;  // Let the controller handle it
             }
         }
+
 
         public async Task<SignInResult> LoginAsync(LoginViewModel model)
         {

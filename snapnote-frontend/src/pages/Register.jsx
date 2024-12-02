@@ -10,6 +10,16 @@ const Register = () => {
     e.preventDefault();
   
     const url = "http://localhost:5000/api/account/register";
+    if (!username || !email || !password || !confirmPassword) {
+      alert("All fields are required!");
+      return;
+    }
+  
+    if (password !== confirmPassword) {
+      alert("Passwords do not match!");
+      return;
+    }
+  
     const payload = {
       Username: username,
       Email: email,
@@ -22,19 +32,21 @@ const Register = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
-        credentials: 'include',  // Important if backend uses cookies or requires credentials
+        credentials: 'include',
       });
   
       if (response.ok) {
         console.log('Registration successful');
-        // Redirect user or provide feedback
       } else {
-        console.error('Registration failed');
+        const errorData = await response.json();
+        console.error('Registration failed:', errorData);
+        alert('Registration failed: ' + JSON.stringify(errorData));  // Display error message for debugging
       }
     } catch (error) {
       console.error('An error occurred:', error);
     }
   };
+  
   
   return (
     <div className="register-container">

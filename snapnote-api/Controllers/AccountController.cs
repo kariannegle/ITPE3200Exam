@@ -19,49 +19,49 @@ namespace NoteApp.Controllers
         }
 
         [HttpOptions("register")]
-        public IActionResult PreflightForRegister()
-        {
-            Response.Headers.Add("Access-Control-Allow-Origin", "http://localhost:3000");
-            Response.Headers.Add("Access-Control-Allow-Methods", "POST, OPTIONS");
-            Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
-            Response.Headers.Add("Access-Control-Allow-Credentials", "true");
-            return Ok();
-}
+        
         // POST: api/account/register
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
+        public async Task<IActionResult> Register(RegisterViewModel model)
         {
             try
             {
-                _logger.LogInformation("Received registration request for username: {Username}", model.Username);
+                if (ModelState.IsValid)
+                {
+                    var result = await _accountRepository.RegisterAsync(model);
+                    if (result.Succeeded)
+                    {
+                        _logger.LogInformation("User registered successfully with username: {Username}", model.Username);
+                        return Ok(new { message = "User registered successfully" });
+                    }
 
-                if (!ModelState.IsValid)
+                    // Log validation errors from the registration process
+                    foreach (var error in result.Errors)
+                    {
+                        _logger.LogWarning("Registration error: {ErrorDescription}", error.Description);
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+                }
+                else
                 {
                     _logger.LogWarning("Invalid registration model state for user: {Username}", model.Username);
-                    return BadRequest(ModelState);
+                    foreach (var key in ModelState.Keys)
+                    {
+                        foreach (var error in ModelState[key].Errors)
+                        {
+                            _logger.LogWarning("Validation error for key {Key}: {Error}", key, error.ErrorMessage);
+                        }
+                    }
                 }
-
-                var result = await _accountRepository.RegisterAsync(model);
-                if (result.Succeeded)
-                {
-                    _logger.LogInformation("User registered successfully with username: {Username}", model.Username);
-                    return Ok(new { message = "Registration successful" });
-                }
-
-                foreach (var error in result.Errors)
-                {
-                    _logger.LogWarning("Registration error for user {Username}: {Error}", model.Username, error.Description);
-                    ModelState.AddModelError(string.Empty, error.Description);
-                }
-
                 return BadRequest(ModelState);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred during registration for user: {Username}", model.Username);
-                return StatusCode(500, new { message = "Internal server error" });
+                return StatusCode(500, "Internal server error");
             }
         }
+
 
         // POST: api/account/login
         [HttpPost("login")]

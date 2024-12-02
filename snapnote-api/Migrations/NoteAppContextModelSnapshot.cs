@@ -66,104 +66,6 @@ namespace NoteApp.Migrations
                     b.ToTable("AspNetRoleClaims", (string)null);
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(256)
-                        .HasColumnType("TEXT");
-
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasMaxLength(256)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("PasswordHash")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("TEXT");
-
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("TEXT");
-
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("UserName")
-                        .HasMaxLength(256)
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedEmail")
-                        .HasDatabaseName("EmailIndex");
-
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasDatabaseName("UserNameIndex");
-
-                    b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "user1-id",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "70175b48-e119-4547-ab0c-fe70957632e5",
-                            Email = "user1@example.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "USER1@EXAMPLE.COM",
-                            NormalizedUserName = "USER1@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKqD9oLHniT5I5geFtHArh0jYdgCMIAG2YsoB93biKjAcFv5iyNNH6JAU3th6SY+Sg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "aeea13fa-8774-4487-9593-f755902584e9",
-                            TwoFactorEnabled = false,
-                            UserName = "user1@example.com"
-                        },
-                        new
-                        {
-                            Id = "user2-id",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "ad0aa4b8-9b78-409c-9bc7-c4efa3ac8f2c",
-                            Email = "user2@example.com",
-                            EmailConfirmed = true,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "USER2@EXAMPLE.COM",
-                            NormalizedUserName = "USER2@EXAMPLE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIbwALURXAPlbLmOfkx7Nqsgoc0jvRnddMeQDftddnToF0cBKhu+CjRdG6YIeplDpg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "b2bbe434-e0f7-4e5b-b1a0-da55e15f57d8",
-                            TwoFactorEnabled = false,
-                            UserName = "user1@example.com"
-                        });
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
                     b.Property<int>("Id")
@@ -190,11 +92,9 @@ namespace NoteApp.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ProviderDisplayName")
@@ -232,11 +132,9 @@ namespace NoteApp.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Value")
@@ -266,7 +164,6 @@ namespace NoteApp.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Username")
@@ -277,6 +174,8 @@ namespace NoteApp.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("PostId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
                 });
@@ -335,7 +234,111 @@ namespace NoteApp.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Posts");
+                });
+
+            modelBuilder.Entity("NoteApp.Models.User", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ProfilePictureUrl")
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex");
+
+                    b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "user1-id",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "d0ab530b-5fd4-469c-acf2-b8f6db5e67cb",
+                            Email = "user1@example.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "USER1@EXAMPLE.COM",
+                            NormalizedUserName = "USER1",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOmnx5z98IzpD6ufJTOohU6qPoxjGRwcppshEqxJIUBpCHlkynDUKHkd3XPl8zQUsg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "fdcb11c8-fc2b-4afb-9771-eeb67ae64522",
+                            TwoFactorEnabled = false,
+                            UserName = "user1"
+                        },
+                        new
+                        {
+                            Id = "user2-id",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "d28c0178-1d44-4f51-aa60-8f549a80b713",
+                            Email = "user2@example.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "USER2@EXAMPLE.COM",
+                            NormalizedUserName = "USER2",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIBby/6VBFlzgg2GfMlDtCoKT9+Ra+PQI7/n+TzYXoFd5Y7n6UpWAYTr/8WYfK5wJQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "9dd2f315-dbb8-457c-b8e3-aac08398b14e",
+                            TwoFactorEnabled = false,
+                            UserName = "user2"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -349,7 +352,7 @@ namespace NoteApp.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("NoteApp.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -358,7 +361,7 @@ namespace NoteApp.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("NoteApp.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -373,7 +376,7 @@ namespace NoteApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("NoteApp.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -382,7 +385,7 @@ namespace NoteApp.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("NoteApp.Models.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -397,19 +400,27 @@ namespace NoteApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("NoteApp.Models.User", "User")
+                        .WithMany("Comments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.Navigation("Post");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("NoteApp.Models.Friend", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "FriendUser")
+                    b.HasOne("NoteApp.Models.User", "FriendUser")
                         .WithMany()
                         .HasForeignKey("FriendId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
-                        .WithMany()
+                    b.HasOne("NoteApp.Models.User", "User")
+                        .WithMany("Friends")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -421,7 +432,25 @@ namespace NoteApp.Migrations
 
             modelBuilder.Entity("NoteApp.Models.Post", b =>
                 {
+                    b.HasOne("NoteApp.Models.User", null)
+                        .WithMany("Posts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("NoteApp.Models.Post", b =>
+                {
                     b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("NoteApp.Models.User", b =>
+                {
+                    b.Navigation("Comments");
+
+                    b.Navigation("Friends");
+
+                    b.Navigation("Posts");
                 });
 #pragma warning restore 612, 618
         }
