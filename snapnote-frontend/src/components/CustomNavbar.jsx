@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext'; // Import the useAuth hook
+import '../App.css';
 
 const CustomNavbar = () => {
   const { isAuthenticated, logout } = useAuth(); // Use authentication status and logout function
@@ -21,10 +22,10 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/posts">Posts</Nav.Link>
             {isAuthenticated ? (
               <>
+                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                <Nav.Link as={Link} to="/posts">Posts</Nav.Link>
                 <Nav.Link as={Link} to="/logout" onClick={logout}>Logout</Nav.Link>
               </>
             ) : (

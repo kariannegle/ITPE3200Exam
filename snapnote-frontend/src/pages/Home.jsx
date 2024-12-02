@@ -3,6 +3,7 @@ import CreatePost from '../components/CreatePost';
 import PostFeed from '../components/PostFeed';
 import { useAuth } from '../context/AuthContext';
 
+
 const Home = () => {
   const { isAuthenticated } = useAuth(); // Get authentication status
 
