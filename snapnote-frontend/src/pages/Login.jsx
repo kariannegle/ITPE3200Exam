@@ -4,35 +4,42 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    // Replace the URL with your backend endpoint for login
-    const url = "/api/account/login";
+    if (!username || !password) {
+      alert('Both username and password are required');
+      return;
+    }
+
     const payload = {
       Username: username,
       Password: password,
     };
 
     try {
-      const response = await fetch(url, {
+      const response = await fetch('http://localhost:5000/api/account/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
+        credentials: 'include', // Include cookies if needed
       });
 
       if (response.ok) {
         console.log('Login successful');
-        // Redirect to home or desired route upon successful login
+        // Navigate to the home page
         navigate('/');
       } else {
-        console.error('Login failed');
-        // Handle the error response
+        const errorData = await response.json();
+        console.error('Login failed:', errorData);
+        alert('Login failed: ' + (errorData.message || 'Unknown error'));
       }
     } catch (error) {
       console.error('An error occurred:', error);
+      alert('An unexpected error occurred. Please try again later.');
     }
   };
 
