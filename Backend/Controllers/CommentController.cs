@@ -45,7 +45,7 @@ public class CommentController : ControllerBase
             await _commentRepository.DeleteCommentAsync(id);
             return Ok(new { success = true, message = "Comment deleted successfully." });
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             return StatusCode(500, new { success = false, message = "An error occurred while deleting the comment." });
         }
@@ -71,7 +71,7 @@ public class CommentController : ControllerBase
             await _commentRepository.UpdateCommentAsync(comment);
             return Ok(new { success = true, message = "Comment updated successfully." });
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             return StatusCode(500, new { success = false, message = "An error occurred while updating the comment." });
         }
