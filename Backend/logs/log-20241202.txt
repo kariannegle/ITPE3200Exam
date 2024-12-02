@@ -5266,3 +5266,612 @@ SELECT "c"."Id", "c"2024-12-02 05:38:02.146 +01:00 [INF] Executed action Comment
 2024-12-02 05:38:02.149 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 8.052ms
 omments (NoteApp)'
 2024-12-02 05:38:02.149 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 8.052ms
+2024-12-02 06:27:37.238 +01:00 [INF] User profile is available. Using '/Users/amiinahmed/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-02 06:27:37.310 +01:00 [INF] Now listening on: http://localhost:5264
+2024-12-02 06:27:37.311 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-02 06:27:37.311 +01:00 [INF] Hosting environment: Development
+2024-12-02 06:27:37.312 +01:00 [INF] Content root path: /Users/amiinahmed/Desktop/Github/ITPE3200ExamSub2/Backend
+2024-12-02 06:27:57.030 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:27:57.136 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:57.140 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-02 06:27:57.205 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:27:57.295 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:27:57.295 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:27:57.621 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:27:57.621 +01:00 [INF] Request starting HTTP/1.1 2024-12-02 06:27:57.621 +01:00 [INF] Request st2024-12-02 06:27:57.623 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:57.623 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:57.624 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:27:57.624 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:27:57.624 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:27:57.624 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPosts() on controller NoteApp.Controllers.PostController (NoteApp).
+2024-12-02 06:27:57.624 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:27:58.403 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p2024-12-02 06:27:58.403 +01:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:27:58.448 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:27:58.448 +01:00 [INF]2024-12-02 06:27:58.468 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 842.1652ms
+2024-12-02 06:27:58.468 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:27:58.471 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 850.526ms
+2024-12-02 06:27:58.516 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:27:58.516 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:27:58.516 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:27:58.516 +01:00 [INF] Request starting HTT2024-12-02 06:27:58.516 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:27:58.516 +01:00 [INF] Request starting HTT2024-12-02 06:27:58.519 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.519 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.519 +01:00 2024-12-02 06:27:58.519 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.519 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.519 +01:00 [INF] COR2024-12-02 06:27:58.519 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.519 +01:00 [INF] Executing endpoint 'CommentController.2024-12-02 06:27:58.519 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.519 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.519 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.5192024-12-02 06:27:58.524 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:27:58.524 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:27:58.524 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:27:58.524 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:27:58.524 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:27:58.524 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:27:58.544 +01:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "2024-12-02 06:27:58.544 +01:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Posts" AS "p"
+LEFT JOIN "Comments" AS "c" ON "p"."Id" = "c"."PostId"
+ORDER BY "p"."Id"
+2024-12-02 06:27:58.544 +01:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:27:58.545 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:27:58.545 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:27:58.545 +01:00 [INF]2024-12-02 06:27:58.552 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:27:58.553 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.553 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:27:58.553 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:27:58.553 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:27:58.556 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 1260.1144ms
+2024-12-02 06:27:58.556 +01:00 [INF] Executed actio2024-12-02 06:27:58.556 +01:00 [INF] Executed action NoteApp.Controll2024-12-02 06:27:58.556 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:27:58.557 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 1533.7722ms
+2024-12-02 06:27:58.556 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:27:58.559 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 938.1955ms
+2024-12-02 06:27:58.566 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:27:58.602 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:27:58.602 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."U2024-12-02 06:27:58.603 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.603 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:27:58.603 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:27:58.606 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:27:58.606 +01:00 [INF]2024-12-02 06:27:58.614 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 60.3691ms
+2024-12-02 06:27:58.618 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:27:58.618 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 66.7007ms
+2024-12-02 06:27:58.652 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:27:58.652 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.652 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.652 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.652 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.652 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.653 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:27:58.654 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:27:58.654 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:27:58.652 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.654 +01:00 [INF] Ex2024-12-02 06:27:58.654 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:27:58.654 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 128.9967ms
+2024-12-02 06:27:58.654 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:27:58.655 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 129.5364ms
+2024-12-02 06:27:58.654 +01:00 [INF] Exec2024-12-02 06:27:58.655 +01:00 [INF] Executed endpoint 'CommentCon2024-12-02 06:27:58.654 +01:00 2024-12-02 06:27:58.655 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.656 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/2 - 200 null application/json; charset=utf-8 139.3089ms
+2024-12-02 06:27:58.655 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.655 +01:00 [INF] Executed endpoint 'CommentController.Ge2024-12-02 06:27:58.62024-12-02 06:27:58.655 +01:00 [INF] Executed action CommentController.GetCo2024-12-02 06:27:58.655 +01:00 2024-12-02 06:27:58.655 +01:00 [INF] Executing OkObjectResult, writing value2024-12-02 06:27:58.655 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.2024-12-02 06:27:58.656 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 139.875ms
+2024-12-02 06:272024-12-02 06:27:58.659 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/2 - 200 null application/json; charset=u2024-12-02 06:272024-12-02 06:27:58.656 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 139.875ms
+2024-12-02 06:27:58.665 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.666 +01:00 [INF] Executed action CommentController.GetComments (NoteAp2024-12-02 06:27:58.668 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.668 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 151.8495ms
+2024-12-02 06:22024-12-02 06:27:58.689 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 123.5367ms
+2024-12-02 06:27:58.687 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:27:58.688 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:27:58.688 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment2024-12-02 06:22024-12-02 06:27:58.692 +01:00 [INF] CORS policy executi2024-12-02 06:22024-12-02 06:27:58.692 +01:00 [INF] CORS policy executi2024-12-02 06:27:58.692 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.692 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+20242024-12-02 06:27:58.692 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.6922024-12-02 06:27:58.693 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.693 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:27:58.693 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:27:58.693 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:27:58.693 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:27:58.694 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:27:58.694 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.694 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.694 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:27:58.695 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:27:58.695 +01:00 [INF] Ex2024-12-02 06:27:58.695 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:27:58.695 +01:00 [INF] Ex2024-12-02 06:27:58.695 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:27:58.695 +01:00 [INF] Ex2024-12-02 06:27:58.695 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 2.0206ms
+2024-12-02 06:27:58.695 +01:00 [INF] Executed action CommentControll2024-12-02 06:27:58.695 +01:00 [INF]2024-12-02 06:27:58.696 +01:00 [INF] Executed action CommentControlle2024-12-02 06:27:58.695 +01:00 [INF]2024-12-02 06:27:58.696 +01:00 [INF] Executed endpoint 'CommentContr2024-12-02 06:27:58.696 +01:02024-12-02 06:27:58.696 +01:00 [INF] Executed endpoint 'CommentController.Ge2024-12-02 06:27:58.62024-12-02 06:27:58.696 +01:00 [INF] Executed endpoint 'CommentController.Ge2024-12-02 06:27:58.62024-12-02 06:27:58.696 +01:00 [INF] Request finished HTTP/1.1 GET http://lo2024-12-02 06:27:58.696 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 9.0347ms
+2024-12-02 06:27:58.696 +01:00 [INF] Ex2024-12-02 06:27:58.698 +01:00 [INF] Request finished HTTP2024-12-02 06:27:58.697 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:27:58.698 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 10.4292ms
+2024-12-02 06:27:58.701 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.697 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comme2024-12-02 06:27:2024-12-02 06:27:58.705 +01:00 [INF] Executing endpoint 'CommentController.GetCom2024-12-02 06:27:2024-12-02 06:27:58.699 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:27:58.699 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/2 - 200 null application/json; charset=utf-8 11.1506ms
+2024-12-02 06:27:58.706 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:27:58.706 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.711 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.708 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:27:58.711 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:27:58.711 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.711 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:27:58.711 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:27:58.711 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:27:58.712 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:27:58.712 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.713 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:27:58.712 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:27:58.713 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:27:58.713 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:27:58.713 +01:00 [INF] Ex2024-12-02 06:27:58.714 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:27:58.714 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment,2024-12-02 06:27:58.714 +01:00 [INF] Executed action CommentControll2024-12-02 06:27:58.714 +01:00 [INF] 2024-12-02 06:27:58.714 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 2.2498ms
+2024-12-02 06:27:58.714 +01:00 [INF] Executed endpoint 'CommentContr2024-12-02 06:27:58.714 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 2.2498ms
+2024-12-02 06:27:58.72024-12-02 06:27:58.715 +01:00 [INF] Request finished HTTP/1.1 GET http://lo2024-12-02 06:27:58.714 +01:00 [INF] Executed endpoint 'CommentController.GetCom2024-12-02 06:27:58.716 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 18.5255ms
+2024-12-02 06:27:58.714 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:27:58.720 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 19.7413ms
+2024-12-02 06:28:14.982 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:28:15.004 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:15.005 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:28:15.012 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:28:15.012 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:28:15.034 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:28:15.034 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:28:15.037 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:28:15.037 +01:00 [INF]2024-12-02 06:28:15.041 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 29.4136ms
+2024-12-02 06:28:15.042 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:28:15.042 +01:00 [INF] Request starting HTTP/1.12024-12-02 06:28:15.042 +01:00 [INF] Executed en2024-12-02 06:28:15.042 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 60.2634ms
+2024-12-02 06:28:15.043 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:15.043 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:28:15.044 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:28:15.044 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:28:15.046 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:28:15.046 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:28:15.050 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:28:15.050 +01:00 [INF]2024-12-02 06:28:15.057 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 13.0502ms
+2024-12-02 06:28:15.058 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:28:15.059 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 17.0224ms
+2024-12-02 06:28:15.080 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:28:15.080 +01:00 [INF] Request starting HTTP2024-12-02 06:28:15.080 +01:00 [INF] Request starting HTTP2024-12-02 06:28:15.081 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:15.081 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:15.080 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:28:15.081 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:15.081 +01:00 [INF] Executing endpoint 'CommentController.2024-12-02 06:28:15.0812024-12-02 06:28:15.082 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:15.089 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:15.090 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:28:15.090 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:28:15.090 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:15.090 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:28:15.090 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:15.103 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:28:15.103 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:28:15.103 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:28:15.103 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:28:15.104 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:28:15.104 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:28:15.104 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:28:15.104 +01:00 [INF] Ex2024-12-02 06:28:15.104 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 12.7801ms
+2024-12-02 06:28:15.104 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 13.1903ms
+2024-12-02 06:28:15.104 +01:00 [INF] Executed action CommentControl2024-12-02 06:28:15.104 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 13.1903ms
+2024-12-02 06:28:15.104 +01:002024-12-02 06:28:15.105 +01:00 [INF] Executed endpoint 'CommentController.Ge2024-12-02 06:28:15.105 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:15.12024-12-02 06:28:15.105 +01:00 [INF] Request finished HTTP/1.1 GET http://lo2024-12-02 06:28:15.105 +01:00 [INF] Request finished HTTP/1.1 GET http://localho2024-12-02 06:28:15.105 +01:00 [INF] Request finished HTTP/1.1 GET http://lo2024-12-02 06:28:15.105 +01:00 [INF] Executed endpoint 'CommentController.GetCom2024-12-02 06:28:2024-12-02 06:28:15.105 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 24.5648ms
+2024-12-02 06:28:15.105 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comme2024-12-02 06:28:15.106 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:15.106 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:15.106 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:28:15.106 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:15.107 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:28:15.107 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:28:15.107 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:28:15.107 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:28:15.107 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, V2024-12-02 06:28:15.107 +01:00 [INF] CORS policy executio2024-12-02 06:2024-12-02 06:28:15.107 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 1.13822022024-12-02 06:28:15.107 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:15.107 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:15.107 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:15.107 +01:00 [INF] Request finished HTTP/1.1 GET http://l2024-12-02 06:28:15.107 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:15.107 +01:00 [INF] Request finished HTTP/1.1 GET http://localh2024-12-02 06:28:15.109 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:28:15.109 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:15.109 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:28:15.109 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:15.110 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:28:15.110 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:28:15.110 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:28:15.110 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:28:15.110 +01:00 [INF] Ex2024-12-02 06:28:15.110 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:28:15.110 +01:00 [INF] Ex2024-12-02 06:28:15.110 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 0.9411ms
+2024-12-02 06:28:15.110 +01:00 [INF] Executed action CommentControll2024-12-02 06:28:15.110 +01:00 [INF] 2024-12-02 06:28:15.111 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:15.111 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:15.111 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 3.9442ms
+2024-12-02 06:28:2024-12-02 06:28:15.111 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; chars2024-12-02 06:28:41.631 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:28:41.634 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:41.635 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:28:41.635 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:28:41.635 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:28:41.642 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:28:41.642 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:28:41.644 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:28:41.644 +01:00 [INF]2024-12-02 06:28:41.646 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 10.4592ms
+2024-12-02 06:28:41.646 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:28:41.648 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:28:41.648 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 17.4044ms
+2024-12-02 06:28:41.649 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:41.649 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:28:41.649 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:28:41.649 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:28:41.652 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:28:41.652 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:28:41.653 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:28:41.653 +01:00 [INF]2024-12-02 06:28:41.660 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 9.9307ms
+2024-12-02 06:28:41.660 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:28:41.660 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 12.254ms
+2024-12-02 06:28:41.674 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:28:41.674 +01:00 [INF] Request starting HTTP2024-12-02 06:28:41.674 +01:00 [INF] Request starting HTTP2024-12-02 06:28:41.675 +01:00 [INF] Request starting HTT2024-12-02 06:28:41.674 +01:00 [INF] Request starting HTTP2024-12-02 06:28:41.685 +01:00 [INF] CORS policy execution2024-12-02 062024-12-02 06:28:41.686 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:41.686 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:41.689 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.689 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.689 +01:00 [INF] Executing endpoint 'CommentController.2024-12-02 06:28:41.6892024-12-02 06:28:41.689 +01:00 [INF] Route matched with {action = "GetComme2024-12-02 06:28:41.689 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.689 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:41.689 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:28:41.689 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:28:41.689 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:41.693 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:28:41.694 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:28:41.693 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:28:41.693 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:28:41.695 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:28:41.695 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:28:41.695 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:28:41.695 +01:00 [INF] Ex2024-12-02 06:28:41.695 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 5.9827ms
+2024-12-02 06:28:41.695 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 5.6952ms
+2024-12-02 06:28:41.695 +01:00 [INF] Executed action CommentControll2024-12-02 06:28:41.695 +01:00 [INF] 2024-12-02 06:28:41.696 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.696 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.695 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.696 +01:00 [INF] Request finished HTTP/1.1 GET http://lo2024-12-02 06:28:41.695 +01:00 [INF] Executed endpoint 'CommentController.GetComm2024-12-02 06:282024-12-02 06:28:41.696 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset2024-12-02 06:28:41.698 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:28:41.697 +01:00 [INF] Request finished HTT2024-12-02 06:28:41.697 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comme2024-12-02 06:28:41.698 +01:00 [INF] Request starting HTT2024-12-02 06:28:41.698 +01:00 [INF] Request starting HTTP2024-12-02 06:28:41.699 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:41.699 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.699 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:28:41.699 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:41.699 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:41.699 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.699 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:28:41.699 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:41.700 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:28:41.700 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:28:41.700 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:28:41.701 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:28:41.701 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:28:41.701 +01:00 [INF] Ex2024-12-02 06:28:41.701 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 1.2732ms
+2024-12-02 06:28:41.701 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 1.6781ms
+2024-12-02 06:28:41.701 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.701 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.701 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 3.1183ms
+2024-12-02 06:28:41.702 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 3.462ms
+2024-12-02 06:28:41.706 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:28:41.716 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:28:41.716 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.716 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:28:41.716 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:28:41.717 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:28:41.717 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:28:41.717 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:28:41.717 +01:00 [INF] Ex2024-12-02 06:28:41.717 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 1.1649ms
+2024-12-02 06:28:41.717 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:28:41.717 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/2 - 200 null application/json; charset=utf-8 11.4625ms
+2024-12-02 06:29:11.868 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:29:11.913 +01:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2024-12-02 06:29:11.914 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:11.918 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:29:11.918 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:29:11.936 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:29:11.936 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:29:11.947 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:29:11.947 +01:00 [INF]2024-12-02 06:29:11.949 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 30.2996ms
+2024-12-02 06:29:11.949 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:11.951 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 83.7843ms
+2024-12-02 06:29:12.274 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/favicon.ico - null null
+2024-12-02 06:29:12.275 +01:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2024-12-02 06:29:12.288 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/favicon.ico - 404 0 null 14.6405ms
+2024-12-02 06:29:12.290 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5264/fa2024-12-02 06:29:12.290 +01:00 [INF] 2024-12-02 06:29:18.700 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:29:18.702 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:18.703 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:18.703 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:29:18.703 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:29:18.710 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:29:18.710 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:29:18.713 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:29:18.713 +01:00 [INF]2024-12-02 06:29:18.719 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 14.4432ms
+2024-12-02 06:29:18.719 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:18.720 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:29:18.720 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 20.714ms
+2024-12-02 06:29:18.720 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:18.721 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:18.721 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:29:18.721 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:29:18.728 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:29:18.728 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:29:18.729 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:29:18.729 +01:00 [INF]2024-12-02 06:29:18.732 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 10.2522ms
+2024-12-02 06:29:18.732 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:18.732 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 12.4677ms
+2024-12-02 06:29:18.809 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:29:18.810 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:18.810 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:29:18.809 +01:00 [INF] Request starting HTTP2024-12-02 06:29:18.810 +01:00 [INF] Request starting HTT2024-12-02 06:29:18.810 +01:00 [INF] Executing endpoint 'C2024-12-02 06:29:18.809 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null n20242024-12-02 06:29:18.811 +01:00 [INF] CORS policy execution successf20242024-12-02 06:29:18.811 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteAp20242024-12-02 06:29:18.810 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:18.810 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:18.812 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:29:18.812 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:18.815 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:29:18.811 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:29:18.818 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:29:18.818 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:29:18.819 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:29:18.818 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:29:18.819 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:29:18.819 +01:00 [INF] Ex2024-12-02 06:29:18.819 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:29:18.819 +01:00 [INF] Ex2024-12-02 06:29:18.820 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 4.7543ms
+2024-12-02 06:29:18.820 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 5.2279ms
+2024-12-02 06:29:18.819 +01:00 [INF] Executing OkObjectResult, writi2024-12-02 06:29:18.820 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 5.2279ms
+2024-12-02 06:29:18.822 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:18.819 +01:00 [INF] Ex2024-12-02 06:29:18.823 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 13.8887ms
+2024-12-02 06:292024-12-02 06:29:18.823 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 13.8887ms
+2024-12-02 06:29:18.823 +01:02024-12-02 06:29:18.823 +01:00 [INF] Request starting HTTP/1.1 GET http://lo2024-12-02 06:29:18.820 +01:00 [INF] Ex2024-12-02 06:29:18.824 +01:00 [INF] Executed endpoint 'Co2024-12-02 06:29:18.823 +01:00 [INF] Re2024-12-02 06:29:18.824 +01:00 [INF] Request finished HTTP/1.1 GET http://lo2024-12-02 06:29:18.826 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:29:18.824 +01:00 [INF] Executed endpoint 'CommentController.GetCo2024-12-02 06:29:18.826 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:29:18.825 +01:00 [INF] CORS policy execution2024-12-02 062024-12-02 06:29:18.827 +01:00 [INF] CORS policy execution2024-12-02 06:29:18.827 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:18.826 +01:00 [INF] Req2024-12-02 06:29:18.827 +01:00 [INF] Request finished HTTP/1.1 GET http://l2024-12-02 06:29:18.828 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:18.827 +01:00 [INF] Request finished HTTP/1.1 GET http://localho2024-12-02 06:29:18.830 +01:00 [INF] Route matched with {action = "GetComme2024-12-02 06:29:18.830 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:18.830 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:29:18.830 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:18.831 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment2024-12-02 06:29:18.830 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:18.831 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:29:18.831 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:18.832 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:29:18.832 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:29:18.833 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:29:18.834 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:29:18.833 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:29:18.835 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:29:18.835 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:29:18.837 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:29:18.837 +01:00 [INF] Ex2024-12-02 06:29:18.837 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:29:18.837 +01:00 [INF] Ex2024-12-02 06:29:18.837 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:29:18.837 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment,2024-12-02 06:29:18.840 +01:00 [INF] Executed action CommentControll2024-12-02 06:29:18.840 +01:00 [INF] 2024-12-02 06:29:18.841 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 8.9507ms
+2024-12-02 06:29:18.844 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:18.844 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:18.845 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 19.87ms
+2024-12-02 06:29:12024-12-02 06:29:18.845 +01:00 [INF] Request finished HTTP/1.1 GET http://local2024-12-02 06:29:18.847 +01:00 [INF] Request finished HTTP/1.1 GET http://lo2024-12-02 06:29:18.847 +01:00 [INF] Request finished HTTP/1.1 GET http://localh2024-12-02 06:29:18.848 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 24.9206ms
+2024-12-02 06:29:37.440 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post/11 - null null
+2024-12-02 06:29:37.443 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:37.445 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPostById (NoteApp)'
+2024-12-02 06:29:37.571 +01:00 [INF] Route matched with {action = "GetPostById", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task2024-12-02 06:29:37.571 +01:00 [INF] Route matched with {action = "GetPostById", controller = "Post"}. Executing controlle2024-12-02 06:29:37.589 +01:00 [INF] Fetching post with ID 11
+2024-12-02 06:29:37.719 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Co2024-12-02 06:29:37.719 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Content", "t"."CreatedAt", "t"."ImageData", "t"."UserId", "t"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM (
+    SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"2024-12-02 06:29:37.721 +01:00 [INF] Executing OkObjectResult, writing value of type 'NoteApp.Models.Post'.
+2024-12-02 06:29:37.731 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPostById (NoteApp) in 158.9926ms
+2024-12-02 06:29:37.732 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPostById (NoteApp)'
+2024-12-02 06:29:37.733 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post/11 - 200 null application/json; charset=utf-8 292.9583ms
+2024-12-02 06:29:37.734 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post/11 - null null
+2024-12-02 06:29:37.735 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:37.735 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPostById (NoteApp)'
+2024-12-02 06:29:37.735 +01:00 [INF] Route matched with {action = "GetPostById", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task2024-12-02 06:29:37.735 +01:00 [INF] Route matched with {action = "GetPostById", controller = "Post"}. Executing controlle2024-12-02 06:29:37.738 +01:00 [INF] Fetching post with ID 11
+2024-12-02 06:29:37.754 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Co2024-12-02 06:29:37.754 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Content", "t"."CreatedAt", "t"."ImageData", "t"."UserId", "t"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM (
+    SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"2024-12-02 06:29:37.767 +01:00 [INF] Executing OkObjectResult, writing value of type 'NoteApp.Models.Post'.
+2024-12-02 06:29:37.775 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPostById (NoteApp) in 39.6152ms
+2024-12-02 06:29:37.776 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPostById (NoteApp)'
+2024-12-02 06:29:37.779 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post/11 - 200 null application/json; charset=utf-8 45.2417ms
+2024-12-02 06:29:55.280 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5264/api/post/11 - null null
+2024-12-02 06:29:55.290 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:55.335 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5264/api/post/11 - 204 null null 55.1662ms
+2024-12-02 06:29:55.388 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5264/api/post/11 - multipart/form-data; boundary=----WebKitFormBoundaryCUNMxs3qDFPsKAnB 72024-2024-12-02 06:29:55.389 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:55.394 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.UpdatePost (NoteApp)'
+2024-12-02 06:29:55.450 +01:00 [INF] Route matched with {action = "UpdatePost", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`2024-12-02 06:29:55.450 +01:00 [INF] Route matched with {action = "UpdatePost", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.As2024-12-02 06:29:55.563 +01:00 [INF] Fetching post with ID 11
+2024-12-02 06:29:55.587 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Co2024-12-02 06:29:55.587 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Content", "t"."CreatedAt", "t"."ImageData", "t"."UserId", "t"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM (
+    SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"2024-12-02 06:29:55.913 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 5), @p1='?' (DbType = DateTime), @p2='?' (Size = 74059) 2024-12-02 06:29:55.913 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 5), @p1='?' (DbType = DateTime), @p2='?' (Size = 74059) (DbType = Binary), @p3='?', @p4='?' (Size = 4)], Command2024-12-02 06:29:55.925 +01:00 [INF] Updated post with ID 11
+2024-12-02 06:29:55.927 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture2024-12-02 06:29:55.927 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Vers2024-12-02 06:29:55.978 +01:00 [INF] Executed action NoteApp.Controllers.PostController.UpdatePost (NoteApp) in 528.058ms
+2024-12-02 06:29:55.979 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.UpdatePost (NoteApp)'
+2024-12-02 06:29:55.987 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5264/api/post/11 - 200 null application/json; charset=utf-8 598.7865ms
+2024-12-02 06:29:57.515 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:29:57.515 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:57.516 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:57.516 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:29:57.516 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:29:57.519 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:29:57.519 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:29:57.521 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:29:57.521 +01:00 [INF]2024-12-02 06:29:57.534 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 17.8694ms
+2024-12-02 06:29:57.537 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:57.537 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:29:57.540 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 25.6884ms
+2024-12-02 06:29:57.557 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:57.613 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:57.614 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:29:57.614 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:29:57.814 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:29:57.833 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:29:57.835 +01:00 [INF] Request starting HTTP2024-12-02 06:29:57.833 +01:00 [INF] Request starting HTT2024-12-02 06:29:57.837 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:57.837 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.837 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:57.838 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:29:57.838 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:29:57.843 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:29:57.843 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:29:57.836 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:57.850 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:29:57.850 +01:00 [INF]2024-12-02 06:29:57.850 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.856 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:29:57.856 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:29:57.856 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:29:57.856 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:29:57.861 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:29:57.861 +01:00 [INF] Ex2024-12-02 06:29:57.843 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.867 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[2024-12-02 06:29:57.843 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.875 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:29:57.867 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c".2024-12-02 06:29:57.880 +01:00 [INF] Executing OkObjectResult, writ2024-12-02 06:29:57.868 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 18.3766ms
+2024-12-02 06:29:57.880 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.2024-12-02 06:29:57.883 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:29:57.934 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:57.934 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/12024-12-02 06:29:57.929 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/11 - null null
+2024-12-02 06:29:57.938 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:57.934 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:57.928 +01:00 [INF] Executed action CommentController.GetComments (NoteA2024-12-02 06:29:2024-12-02 06:29:57.935 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 317.0108ms
+2024-12-02 06:29:57.951 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:29:57.934 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 94.8492ms
+2024-12-02 06:29:57.948 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.949 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.954 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 146.313ms
+2024-12-02 06:29:57.952 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 414.922ms
+2024-12-02 06:29:57.955 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:29:57.944 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.883 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:29:57.972 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:29:57.977 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:29:57.977 +01:00 [INF] Ex2024-12-02 06:29:57.978 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 101.4617ms
+2024-12-02 06:29:57.982 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.982 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/2 - 200 null application/json; charset=utf-8 147.2059ms
+2024-12-02 06:292024-12-02 06:29:57.983 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:29:57.982 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId2024-12-02 06:29:57.983 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:29:57.983 +01:00 [INF] Ex2024-12-02 06:29:57.984 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:29:57.984 +01:00 [INF] Executing OkObjectRes2024-12-02 06:29:57.984 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 15.5954ms
+2024-12-02 06:29:57.985 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.986 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 103.364ms
+2024-12-02 06:29:57.984 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, 2024-12-02 06:29:57.990 +01:00 [INF] Executed action Comme2024-12-02 06:29:57.990 +01:00 [INF] Executed ac2024-12-02 06:29:57.990 +01:00 [INF] Executed endpoint 'Co2024-12-02 06:29:57.990 +01:00 [INF] Ex2024-12-02 06:29:57.993 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:29:57.994 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:57.994 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:29:57.994 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:29:57.991 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 62.7785ms
+2024-12-02 06:292024-12-02 06:29:57.991 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/11 - 200 null application/json; charset=utf-8 62.7785ms
+2024-12-02 06:29:57.999 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:29:58.000 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:29:58.000 +01:00 [INF] Ex2024-12-02 06:29:58.001 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 5.1147ms
+2024-12-02 06:29:58.001 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:29:58.001 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/2 - 200 null application/json; charset=utf-8 17.4209ms
+2024-12-02 06:31:13.867 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5264/api/post/11 - null null
+2024-12-02 06:31:13.986 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:14.002 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5264/api/post/11 - 204 null null 134.7415ms
+2024-12-02 06:31:14.039 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5264/api/post/11 - null null
+2024-12-02 06:31:14.042 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:14.280 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.DeletePost (NoteApp)'
+2024-12-02 06:31:14.812 +01:00 [INF] Route matched with {action = "DeletePost", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`2024-12-02 06:31:14.812 +01:00 [INF] Route matched with {action = "DeletePost", controller = "Post"}. Executing controll2024-12-02 06:31:15.269 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Con2024-12-02 06:31:15.269 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Tex2024-12-02 06:31:15.343 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Posts"
+WHERE "I2024-12-02 06:31:15.342024-12-02 06:31:15.378 +01:00 [INF] Deleted post with ID 11
+2024-12-02 06:31:15.381 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture2024-12-02 06:31:15.381 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Vers2024-12-02 06:31:15.387 +01:00 [INF] Executed action NoteApp.Controllers.PostController.DeletePost (NoteApp) in 572.3115ms
+2024-12-02 06:31:15.388 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.DeletePost (NoteApp)'
+2024-12-02 06:31:15.388 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5264/api/post/11 - 200 null application/json; charset=utf-8 1349.2459ms
+2024-12-02 06:31:27.516 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/post - multipart/form-data; boundary=----WebKitFormBoundary3XarA6fK8BDOCSmL 7442022024-12-02 06:31:27.524 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:27.525 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.CreatePost (NoteApp)'
+2024-12-02 06:31:27.554 +01:00 [INF] Route matched with {action = "CreatePost", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`2024-12-02 06:31:27.554 +01:00 [INF] Route matched with {action = "CreatePost", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Micro2024-12-02 06:31:27.651 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4), @p1='?' (DbType = DateTime), @p2='?' (Size = 74059) (DbType = Binary), @p3='?'2024-12-02 06:31:27.651 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4), @p1='?' (DbType = DateTime), @p2='?' (Size = 74059) (DbType = Binary), @p3='?', @p4='?' (Size = 4)],2024-12-02 06:31:27.670 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture2024-12-02 06:31:27.670 +01:00 [INF] Executing2024-12-02 06:31:27.675 +01:00 [INF] Executed action NoteApp.Controllers.PostController.CreatePost (NoteApp) in 120.5247ms
+2024-12-02 06:31:27.675 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.CreatePost (NoteApp)'
+2024-12-02 06:31:27.676 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/post - 200 null application/json; charset=utf-8 161.875ms
+2024-12-02 06:31:27.681 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:31:27.681 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:27.681 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:31:27.682 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:31:27.682 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:31:27.685 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:31:27.685 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:31:27.686 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:31:27.686 +01:00 [INF]2024-12-02 06:31:27.690 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 8.0022ms
+2024-12-02 06:31:27.691 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:31:27.691 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 10.3599ms
+2024-12-02 06:31:27.735 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:31:27.735 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/13 - null null
+2024-12-02 06:31:27.736 +01:00 [INF] CORS policy executio2024-12-02 06:2024-12-02 06:31:27.736 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:27.736 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:31:27.737 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:27.737 +01:00 [INF] Executing endpoint 'CommentController.2024-12-02 06:31:27.7372024-12-02 06:31:27.737 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:31:27.737 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:31:27.737 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:31:27.737 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:31:27.737 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:27.738 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:27.738 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:31:27.738 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:31:27.740 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:31:27.740 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:31:27.740 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:31:27.740 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:31:27.741 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:31:27.741 +01:00 [INF] Ex2024-12-02 06:31:27.747 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:31:27.747 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:31:27.747 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 9.281ms
+2024-12-02 06:31:27.743 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:31:27.748 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:27.748 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/13 - 200 null application/json; charset=utf-8 12.9ms
+2024-12-02 06:31:272024-12-02 06:31:27.748 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 8.7942ms
+2024-12-02 06:31:27.748 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, Publi2024-12-02 06:31:27.749 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:27.749 +01:00 [INF] Executed action CommentController.GetCo2024-12-02 06:31:27.749 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 11.3796ms
+2024-12-02 06:31:27.749 +01:00 [INF] Exe2024-12-02 06:31:27.750 +01:00 [INF] Executed endpoint 'C2024-12-02 06:31:27.749 +01:00 [INF] Req2024-12-02 06:31:27.749 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:31:27.753 +01:00 [INF] CORS policy execution2024-12-02 06:31:27.753 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:27.753 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 17.1919ms
+2024-12-02 06:31:27.750 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:31:27.754 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/2 - 200 null application/json; charset=utf-8 18.3365ms
+2024-12-02 06:31:27.749 +01:00 [INF] Req2024-12-02 06:31:27.756 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:27.756 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:27.756 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment2024-12-02 06:31:27.756 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:27.756 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IA2024-12-02 06:31:27.757 +01:00 [INF] Executing endpoint 'CommentController.2024-12-02 06:31:27.7572024-12-02 06:31:27.757 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:31:27.757 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:31:27.757 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:31:27.759 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:31:27.757 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:31:27.758 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:31:27.759 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:31:27.759 +01:00 [INF] Ex2024-12-02 06:31:27.759 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:31:27.759 +01:00 [INF] Ex2024-12-02 06:31:27.760 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 2.7058ms
+2024-12-02 06:31:27.760 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:27.760 +01:00 [INF] Executed action CommentController.GetCo2024-12-02 06:31:27.760 +01:02024-12-02 06:31:27.760 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@2024-12-02 06:31:27.760 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:27.760 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."User2024-12-02 06:31:27.761 +01:00 [INF] Request finished HTTP/1.1 GET http://lo2024-12-02 06:31:27.760 +01:00 [INF] Executed endpoint 'CommentController.GetComm2024-12-02 06:312024-12-02 06:31:27.761 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/13 - 200 null application/json; charset=utf-8 11.0891ms
+2024-12-02 06:31:27.761 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicK2024-12-02 06:31:27.762 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 2.659ms
+2024-12-02 06:31:27.762 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:27.763 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 13.4068ms
+2024-12-02 06:31:29.772 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post/13 - null null
+2024-12-02 06:31:29.777 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:29.790 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPostById (NoteApp)'
+2024-12-02 06:31:29.856 +01:00 [INF] Route matched with {action = "GetPostById", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task2024-12-02 06:31:29.856 +01:00 [INF] Route matched with {action = "GetPostById", controller = "Post"}. Executing controlle2024-12-02 06:31:29.866 +01:00 [INF] Fetching post with ID 13
+2024-12-02 06:31:29.873 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Co2024-12-02 06:31:29.873 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Content", "t"."CreatedAt", "t"."ImageData", "t"."UserId", "t"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM (
+    SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"2024-12-02 06:31:29.874 +01:00 [INF] Executing OkObjectResult, writing value of type 'NoteApp.Models.Post'.
+2024-12-02 06:31:29.882 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post/13 - null null
+2024-12-02 06:31:29.881 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPostById (NoteApp) in 20.7748ms
+2024-12-02 06:31:29.884 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPostById (NoteApp)'
+2024-12-02 06:31:29.884 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:29.885 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPostById (NoteApp)'
+2024-12-02 06:31:29.886 +01:00 [INF] Route matched with {action = "GetPostById", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task2024-12-02 06:31:29.886 +01:00 [INF] Route matched with {action = "GetPostById", controller = "Post"}. Executing controlle2024-12-02 06:31:29.886 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post/13 - 200 null application/json; charset=utf-8 113.393ms
+2024-12-02 06:31:29.887 +01:00 [INF] Fetching post with ID 13
+2024-12-02 06:31:29.948 +01:00 [INF] Executed DbCommand (57ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."C2024-12-02 06:31:29.948 +01:00 [INF] Executed DbCommand (57ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Content", "t"."CreatedAt", "t"."ImageData", "t"."UserId", "t"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM (
+    SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"2024-12-02 06:31:29.953 +01:00 [INF] Executing OkObjectResult, writing value of type 'NoteApp.Models.Post'.
+2024-12-02 06:31:29.956 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPostById (NoteApp) in 69.3953ms
+2024-12-02 06:31:29.960 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPostById (NoteApp)'
+2024-12-02 06:31:29.961 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post/13 - 200 null application/json; charset=utf-8 78.7635ms
+2024-12-02 06:31:42.525 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5264/api/post/13 - null null
+2024-12-02 06:31:42.536 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:42.566 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5264/api/post/13 - 204 null null 40.5588ms
+2024-12-02 06:31:42.577 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5264/api/post/13 - multipart/form-data; boundary=----WebKitFormBoundaryG7B36f0cvVStbzQF 220242024-12-02 06:31:42.578 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:42.579 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.UpdatePost (NoteApp)'
+2024-12-02 06:31:42.580 +01:00 [INF] Route matched with {action = "UpdatePost", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`2024-12-02 06:31:42.580 +01:00 [INF] Route matched with {action = "UpdatePost", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.As2024-12-02 06:31:42.601 +01:00 [INF] Fetching post with ID 13
+2024-12-02 06:31:42.611 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Co2024-12-02 06:31:42.611 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."Content", "t"."CreatedAt", "t"."ImageData", "t"."UserId", "t"."Username", "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM (
+    SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"2024-12-02 06:31:42.617 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 5), @p1='?' (DbType = DateTime), @p2='?' (Size = 2408) (2024-12-02 06:31:42.617 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 5), @p1='?' (DbType = DateTime), @p2='?' (Size = 2408) (DbType = Binary), @p3='?', @p4='?' (Size = 4)], Command2024-12-02 06:31:42.621 +01:00 [INF] Updated post with ID 13
+2024-12-02 06:31:42.625 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture2024-12-02 06:31:42.625 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Vers2024-12-02 06:31:42.626 +01:00 [INF] Executed action NoteApp.Controllers.PostController.UpdatePost (NoteApp) in 39.5003ms
+2024-12-02 06:31:42.626 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.UpdatePost (NoteApp)'
+2024-12-02 06:31:42.626 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5264/api/post/13 - 200 null application/json; charset=utf-8 49.4907ms
+2024-12-02 06:31:44.187 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:31:44.188 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:44.188 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:31:44.188 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:31:44.188 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:31:44.194 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:31:44.194 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:31:44.197 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:31:44.197 +01:00 [INF]2024-12-02 06:31:44.202 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 13.4463ms
+2024-12-02 06:31:44.203 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:31:44.204 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 16.8548ms
+2024-12-02 06:31:44.213 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/post - null null
+2024-12-02 06:31:44.214 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:44.214 +01:00 [INF] Executing endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:31:44.215 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing controller action with signature System.Threading.Tasks.Task`1[2024-12-02 06:31:44.215 +01:00 [INF] Route matched with {action = "GetPosts", controller = "Post"}. Executing c2024-12-02 06:31:44.217 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"2024-12-02 06:31:44.217 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Content", "p"."CreatedAt", "p"."ImageData", "p"."UserId", "p"."Username", "c"."2024-12-02 06:31:44.221 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Post, NoteApp, Version=0.0.0.0, Cultu2024-12-02 06:31:44.221 +01:00 [INF]2024-12-02 06:31:44.227 +01:00 [INF] Executed action NoteApp.Controllers.PostController.GetPosts (NoteApp) in 11.7237ms
+2024-12-02 06:31:44.227 +01:00 [INF] Executed endpoint 'NoteApp.Controllers.PostController.GetPosts (NoteApp)'
+2024-12-02 06:31:44.234 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/post - 200 null application/json; charset=utf-8 21.3883ms
+2024-12-02 06:31:44.243 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/13 - null null
+2024-12-02 06:31:44.243 +01:00 [INF] Request starting HTT2024-12-02 06:31:44.243 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/13 - null null
+2024-12-02 06:31:44.243 +01:00 [INF] Request starting HTT2024-12-02 06:31:44.244 +01:00 [INF] CORS policy execution2024-12-02 062024-12-02 06:31:44.244 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:44.244 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:44.244 +01:00 [INF] CORS policy execution successful.
+20242024-12-02 06:31:44.244 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteAp2024-12-02 06:31:44.245 +01:00 [INF] Executing endpoint 'CommentController.2024-12-02 06:31:44.2452024-12-02 06:31:44.245 +01:00 [INF] Route matched with {action = "GetComme2024-12-02 06:31:44.245 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IA2024-12-02 06:31:44.245 +01:00 [INF] Route matched with {action = "GetComme2024-12-02 06:31:44.245 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IA2024-12-02 06:31:44.246 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:31:44.246 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:31:44.247 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:31:44.247 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:31:44.247 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:31:44.247 +01:00 [INF] Ex2024-12-02 06:31:44.247 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:31:44.247 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:31:44.248 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:31:44.248 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 1.1937ms
+2024-12-02 06:31:44.248 +01:00 [INF] Ex2024-12-02 06:31:44.248 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/2 - null null
+2024-12-02 06:31:44.248 +01:00 [INF] Executing OkObjectRes2024-12-02 06:31:44.248 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:31:44.248 +01:00 [INF] Re2024-12-02 06:31:44.250 +01:00 [INF] Executed action CommentController.GetCo2024-12-02 06:31:44.250 +01:02024-12-02 06:31:44.251 +01:00 [INF] CORS policy execution successfu2024-12-02 06:31:44.251 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 5.5368ms
+2024-12-02 06:31:44.250 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 3.9659ms
+2024-12-02 06:2024-12-02 06:31:44.251 +01:00 [INF] Request finished HTT2024-12-02 06:31:44.251 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comme2024-12-02 06:31:44.254 +01:00 [INF] Executed endpoint 'C2024-12-02 06:31:44.254 +01:00 [INF] Exe2024-12-02 06:31:44.255 +01:00 [INF] Executed endpoint 'C2024-12-02 06:31:44.255 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:44.251 +01:00 [INF] Requ2024-12-02 06:31:44.259 +01:00 [INF] Request starting HTTP/1.1 GET http://l2024-12-02 06:31:44.255 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:44.259 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5264/api/comment/1 - null null
+2024-12-02 06:31:44.271 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:44.270 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/13 - 200 null application/json; charset=utf-8 27.492ms
+2024-12-02 06:31:44.259 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/1 - 200 null application/json; charset=utf-8 15.5795ms
+2024-12-02 06:31:44.272 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:44.272 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:44.271 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetComments(Int32) on controller CommentController (NoteApp).
+2024-12-02 06:31:44.272 +01:00 [INF] Executing endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:44.272 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:31:44.272 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.T2024-12-02 06:31:44.272 +01:00 [INF] Route matched with {action = "GetComments", controller = "Comment"}. Ex2024-12-02 06:31:44.274 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"2024-12-02 06:31:44.274 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:31:44.274 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Content", "c"."CreatedAt", "c"."PostId", "c"."UserId", "c"."Username"
+FROM "Comments" AS "c"
+WHERE "c"."PostId" = @__postId_0
+2024-12-02 06:31:44.274 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text2024-12-02 06:31:44.274 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Cu2024-12-02 06:31:44.274 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:31:44.274 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NoteApp.Models.Comment, NoteApp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-02 06:31:44.274 +01:00 [INF] Ex2024-12-02 06:31:44.274 +01:00 [INF] Executed action CommentController.GetComments (NoteApp) in 1.1659ms
+2024-12-02 06:31:44.274 +01:00 [INF] Executed action CommentControll2024-12-02 06:31:44.274 +01:00 [INF] 2024-12-02 06:31:44.275 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:44.275 +01:00 [INF] Executed endpoint 'CommentController.Ge2024-12-02 06:31:44.275 +01:00 [INF] Executed endpoint 'CommentController.GetComments (NoteApp)'
+2024-12-02 06:31:44.275 +01:2024-12-02 06:31:44.275 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/13 - 200 null application/json; charset=utf-8 24.7622ms
+2024-12-02 06:312024-12-02 06:31:44.275 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/13 - 200 null application/json; charset=utf-8 24.7622ms
+2024-12-02 06:31:44.275 +01:00 [INF] Request finished HTTP/1.1 GET http://localh2024-12-02 06:31:44.277 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5264/api/comment/2 - 200 null application/json; charset=utf-8 28.295ms
+2024-12-02 06:31:53.998 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5264/api/comment - null null
+2024-12-02 06:31:54.002 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:54.003 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5264/api/comment - 204 null null 5.4045ms
+2024-12-02 06:31:54.005 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5264/api/comment - application/json 85
+2024-12-02 06:31:54.005 +01:00 [INF] CORS policy execution successful.
+2024-12-02 06:31:54.006 +01:00 [INF] Executing endpoint 'CommentController.AddComment (NoteApp)'
+2024-12-02 06:31:54.022 +01:00 [INF] Route matched with {action = "AddComment", controller = "Comment"}. Executing controller action with signature System.Threading.Tasks.Ta2024-12-02 06:31:54.022 +01:00 [INF] Route matched with {action = "AddComment", controller = "Comment"}. Executing controll2024-12-02 06:31:54.066 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 2), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?', @p4='?' (Size 2024-12-02 06:31:54.066 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 2), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?', @p4='?' (Size = 4)],2024-12-02 06:31:54.069 +01:00 [INF] Executing OkObjectResult, writing value of type 'NoteApp.Models.Comment'.
+2024-12-02 06:31:54.070 +01:00 [INF] Executed action CommentController.AddComment (NoteApp) in 47.7659ms
+2024-12-02 06:31:54.070 +01:00 [INF] Executed endpoint 'CommentController.AddComment (NoteApp)'
+2024-12-02 06:31:54.070 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/comment - 200 null application/json; charset=utf-8 65.3569ms
+omment (NoteApp)'
+2024-12-02 06:31:54.070 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5264/api/comment - 200 null application/json; charset=utf-8 65.3569ms
