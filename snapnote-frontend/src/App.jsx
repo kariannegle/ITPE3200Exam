@@ -1,5 +1,6 @@
 // src/App.jsx
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import CustomNavbar from './components/CustomNavbar';

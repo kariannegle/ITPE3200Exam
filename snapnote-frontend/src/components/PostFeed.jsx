@@ -1,7 +1,7 @@
 // src/components/PostFeed.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
-import Post from './Post.jsx'; // Ensure the path is correct
+import Post from '../components/Post'; // Ensure the path is correct
 
 const PostFeed = ({ posts, onDelete }) => {
   console.log("PostFeed received onDelete:", typeof onDelete);
@@ -15,7 +15,14 @@ const PostFeed = ({ posts, onDelete }) => {
     console.log(`Editing post ${postId} with new content: ${newContent}`);
     
   };
-
+  const handleAddComment = (postId, comment) => {
+    console.log(`Adding comment to post ${postId}:`, comment);
+    // Logic to handle adding a comment
+  };
+  const handleDeleteComment = (postId, commentId) => {
+    console.log(`Deleting comment ${commentId} from post ${postId}`);
+    // Logic to handle deleting a comment
+  };
   return (
     <div className="post-feed">
       {posts && posts.length > 0 ? (
@@ -25,6 +32,8 @@ const PostFeed = ({ posts, onDelete }) => {
             post={post}
             onDelete={onDelete}
             onEdit={handleEdit} // Pass the handleEdit function to the Post component
+            onAddComment={handleAddComment}
+            onDeleteComment={handleDeleteComment}
           />
         ))
       ) : (

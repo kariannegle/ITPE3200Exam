@@ -1,43 +1,86 @@
 import React from 'react';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext'; // Import the useAuth hook
+import Logo from "../assets/logo.png";
 import '../App.css';
 
 const CustomNavbar = () => {
   const { isAuthenticated, logout } = useAuth(); // Use authentication status and logout function
 
   return (
-    <Navbar expand="md" bg="light" variant="light" fixed="top" className="navbar">
-      <Container fluid>
-        <Button
-          variant="outline-secondary"
-          className="me-2 d-md-none"
-          onClick={() => console.log('Sidebar toggle clicked')}
+    <nav className="navbar navbar-expand-md navbar-light fixed-top">
+      <div className="container-fluid">
+        {/* Sidebar Toggle Button */}
+        <button
+          className="btn btn-outline-secondary me-2 d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sidebar"
+          aria-controls="sidebar"
+          aria-expanded="false"
+          aria-label="Toggle sidebar"
         >
-          <i className="fas fa-bars"></i>
-        </Button>
+          <i className="bi bi-list"></i>
+        </button>
 
-        <Navbar.Brand as={Link} to="/">SnapNote</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+        {/* Navbar Brand */}
+        <Link className="navbar-brand" to="/" aria-label="Home">
+          <img
+            src={Logo}
+            alt="SnapNoteLogo"
+            width="100"
+            height="40"
+            className="d-inline-block align-text-top"
+          />
+        </Link>
+
+        {/* Navbar Content (Right-aligned) */}
+        <div className="collapse navbar-collapse" id="navbarContent">
+          <ul className="navbar-nav ms-auto">
             {isAuthenticated ? (
               <>
-                <Nav.Link as={Link} to="/">Home</Nav.Link>
-                <Nav.Link as={Link} to="/posts">Posts</Nav.Link>
-                <Nav.Link as={Link} to="/logout" onClick={logout}>Logout</Nav.Link>
+                {/* Settings Icon */}
+                <li className="nav-item">
+                  <Link className="nav-link" to="/settings" aria-label="Settings">
+                    <i className="bi bi-gear" alt="SettingIcon" style={{ fontSize: "1.5rem" }}></i>
+                  </Link>
+                </li>
+                {/* Profile Icon with Dropdown */}
+                <li className="nav-item dropdown">
+                  <button
+                    className="nav-link dropdown-toggle"
+                    id="navbarDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    aria-label="Profile Icon"
+                  >
+                    <i className="bi bi-person-circle" style={{ fontSize: "1.5rem" }}></i>
+                  </button>
+                  <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li>
+                      <Link className="dropdown-item" to="/settings">Settings</Link>
+                    </li>
+                    <li>
+                      <button className="dropdown-item" onClick={logout}>Logout</button>
+                    </li>
+                  </ul>
+                </li>
               </>
             ) : (
               <>
-                <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                <Nav.Link as={Link} to="/register">Register</Nav.Link>
+                {/* Login and Register Links for larger screens */}
+                <li className="nav-item d-none d-md-block">
+                  <Link className="nav-link link-underline link-underline-opacity-0 text-dark" to="/login">Login</Link>
+                </li>
+                <li className="nav-item d-none d-md-block">
+                  <Link className="nav-link link-underline-opacity-0 text-dark" to="/register">Register</Link>
+                </li>
               </>
             )}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
