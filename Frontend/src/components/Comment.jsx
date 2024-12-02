@@ -10,7 +10,7 @@ const Comments = ({ postId }) => {
     const fetchComments = async () => {
       try {
         const response = await axios.get(`/comment/${postId}`)
-        console.log("Fetched comments:", response.data)
+
         if (response.data && response.data.$values) {
           setComments(response.data.$values)
         } else {

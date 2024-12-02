@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import React from "react"
+import { Link } from "react-router-dom"
+import Logo from "../assets/logo.png"
 
 const Navbar = ({ isSignedIn, username, handleLogout }) => {
   return (
@@ -37,8 +37,16 @@ const Navbar = ({ isSignedIn, username, handleLogout }) => {
               <>
                 {/* Settings Icon */}
                 <li className="nav-item">
-                  <Link className="nav-link" to="/settings" aria-label="Settings">
-                    <i className="bi bi-gear" alt="SettingIcon" style={{ fontSize: "1.5rem" }}></i>
+                  <Link
+                    className="nav-link"
+                    to="/settings"
+                    aria-label="Settings"
+                  >
+                    <i
+                      className="bi bi-gear"
+                      alt="SettingIcon"
+                      style={{ fontSize: "1.5rem" }}
+                    ></i>
                   </Link>
                 </li>
                 {/* Profile Icon with Dropdown */}
@@ -51,14 +59,25 @@ const Navbar = ({ isSignedIn, username, handleLogout }) => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <i className="bi bi-person-circle" style={{ fontSize: "1.5rem" }} aria-label="Profile Icon"></i>
+                    <i
+                      className="bi bi-person-circle"
+                      style={{ fontSize: "1.5rem" }}
+                      aria-label="Profile Icon"
+                    ></i>
                   </a>
-                  <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <ul
+                    className="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdown"
+                  >
                     <li>
-                      <Link className="dropdown-item" to="/settings">Settings</Link>
+                      <Link className="dropdown-item" to="/settings">
+                        Settings
+                      </Link>
                     </li>
                     <li>
-                      <button className="dropdown-item" onClick={handleLogout}>Logout</button>
+                      <button className="dropdown-item" onClick={handleLogout}>
+                        Logout
+                      </button>
                     </li>
                   </ul>
                 </li>
@@ -67,10 +86,20 @@ const Navbar = ({ isSignedIn, username, handleLogout }) => {
               <>
                 {/* Login and Register Links for larger screens */}
                 <li className="nav-item d-none d-md-block">
-                  <Link className="nav-link link-underline link-underline-opacity-0 text-dark" to="/login">Login</Link>
+                  <Link
+                    className="nav-link link-underline link-underline-opacity-0 text-dark"
+                    to="/login"
+                  >
+                    Login
+                  </Link>
                 </li>
                 <li className="nav-item d-none d-md-block">
-                  <Link className="nav-link link-underline-opacity-0 text-dark" to="/register">Register</Link>
+                  <Link
+                    className="nav-link link-underline-opacity-0 text-dark"
+                    to="/register"
+                  >
+                    Register
+                  </Link>
                 </li>
               </>
             )}
@@ -78,7 +107,7 @@ const Navbar = ({ isSignedIn, username, handleLogout }) => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

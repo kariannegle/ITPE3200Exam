@@ -4,6 +4,7 @@ import axios from "../api/axios"
 import userImg from "../assets/image.png"
 import CreatePost from "../components/CreatePost"
 import Comments from "../components/Comment"
+import MoreImg from "../assets/more.svg"
 
 const Posts = () => {
   const [posts, setPosts] = useState([])
@@ -87,6 +88,34 @@ const Posts = () => {
                 </div>
               )}
             </div>
+            <div className="dropdown">
+              <img
+                className=" btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                src={MoreImg}
+                alt="more"
+              />
+              <ul className="dropdown-menu">
+                <li>
+                  <button
+                    className="dropdown-item text-danger d-flex align-items-center"
+                    onClick={() => handleDeletePost(post.id)}
+                  >
+                    Delete
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="dropdown-item text-danger d-flex align-items-center"
+                    onClick={() => handleEditPost(post.id)}
+                  >
+                    Edit
+                  </button>
+                </li>
+              </ul>
+            </div>
             <div className="right-content">
               <div
                 className="post-details-box"
@@ -112,18 +141,6 @@ const Posts = () => {
                 <div className="noteContentWithImage">
                   <p>{post.content}</p>
                 </div>
-                <button
-                  className="btn btn-danger"
-                  onClick={() => handleDeletePost(post.id)}
-                >
-                  Delete
-                </button>
-                <button
-                  className="btn btn-primary"
-                  onClick={() => handleEditPost(post.id)}
-                >
-                  Edit
-                </button>
               </div>
               {/* Comments Section */}
               <Comments comments={post.comments} postId={post.id} />
