@@ -1,3 +1,4 @@
+// src/components/PostFeed.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import Post from './Post.jsx'; // Ensure the path is correct
@@ -10,11 +11,21 @@ const PostFeed = ({ posts, onDelete }) => {
     return null; // Optionally, render a fallback UI
   }
 
+  const handleEdit = (postId, newContent) => {
+    console.log(`Editing post ${postId} with new content: ${newContent}`);
+    
+  };
+
   return (
     <div className="post-feed">
       {posts && posts.length > 0 ? (
         posts.map(post => (
-          <Post key={post.id} post={post} onDelete={onDelete} />
+          <Post
+            key={post.id}
+            post={post}
+            onDelete={onDelete}
+            onEdit={handleEdit} // Pass the handleEdit function to the Post component
+          />
         ))
       ) : (
         <p>No posts available.</p>
